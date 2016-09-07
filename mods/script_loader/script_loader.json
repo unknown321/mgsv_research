@@ -1,0 +1,34 @@
+{
+	"keys":
+	{
+		"PlayerPad.UP": 
+		{
+			"module":"animation_changer",
+			"function":"play_current_animation"
+		},
+		"PlayerPad.RIGHT": 
+		{
+			"module":"animation_changer",
+			"function":"play_next_animation"
+		},
+		"PlayerPad.LEFT": 
+		{
+			"module":"animation_changer",
+			"function":"stop_animation"
+		},
+		"PlayerPad.DOWN": 
+		{
+			"module":"animation_changer",
+			"function":"play_next_animation_step"
+		},
+                "PlayerPad.RELOAD":
+                {
+                    "module":"fova_changer",
+                    "function":"change_fova"
+                }
+	},
+	"settings":
+	{
+		"play_sound":true
+	}
+}

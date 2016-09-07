@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Metal Gear Solid V: The Phantom Pain technical information : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Metal Gear Solid V: The Phantom Pain technical information</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/unknown321/mgsv_research">View on GitHub</a>
+
+          <h1 id="project_title">Metal Gear Solid V: The Phantom Pain technical information</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+          As a modder, I restart game a lot of times and packing lua files back takes away my free time. That's why I had to make a loader, which reads lua scripts situated outside *.dat archives. It also is capable of binding functions used in external lua files to keys. Keys can be defined in a separate config file, stored outside of archives as well. The only thing you'll ever need to pack is the loader itself (and assets if you use them in your mod).
+
+          <br>
+          <h3>Installation</h3>
+          Place <a href='link_to_loader'>LINK TO LOADER</a> into 00.dat, /Assets/tpp/script/lib/scriptloader.lua - drop it here. Add &lg;Entry FilePath="/Assets/tpp/script/lib/scriptloader.lua" Compressed="false" /&rg; into your 00.dat.xml (if you use GzsTool). If you use MGS_QAR_TOOL, add "STRING" to your 00.inf. 
+          Open 00\Assets\tpp\script\lib\Tpp.lua and find "/Assets/tpp/script/lib/TppMbFreeDemo.lua". Add after ', "/Assets/tpp/script/lib/scriptloader.lua" (yes, with a comma).
+          Open 00\Assets\tpp\script\lib\TppMain.lua and find "TppMission.UpdateForMissionLoad". Add after ',DropWeapon.Update' (with comma as well).
+          Pack your 00.dat. 
+
+          <h3>Usage</h3>
+          Script loader will look for your lua files in different directories, I use main game directory (SteamApps\common\MGS_TPP\lua). You will need to create 'lua' folder there and put your scripts there along with provided config. Lua scripts have to be listed in config like this: EXAMPLE. 
+    By pressing MODKEY+R loader will reload all scripts mentioned in config.
+    <h3>Binding keys</h4>
+    blabla keys.
+    <h3>Links</h3>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Metal Gear Solid V: The Phantom Pain technical information maintained by <a href="https://github.com/unknown321">unknown321</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

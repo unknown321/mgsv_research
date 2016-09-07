@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Metal Gear Solid V: The Phantom Pain technical information : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Metal Gear Solid V: The Phantom Pain technical information</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/unknown321/mgsv_research">View on GitHub</a>
+
+          <h1 id="project_title">Metal Gear Solid V: The Phantom Pain technical information</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+          <h3>Introduction</h3>
+          <p>Player animations are stored in *.mtar files which are actually archives with different motions archived inside. Animations have `*.gani` extension and don't exist outside *.mtar archives. Up to this date there is no unpacker since no one is interested in motions :(. Anyway, every object has animations and animations are somewhat compatible between each other which is pretty cool - see this https://www.youtube.com/watch?v=bObxq7N-EKk for example.</p>
+
+          <p>Since there is no unpacker for *.mtar archives and there is not a single person who wants to research the format, the only way of having fun with them is reusing motions. I tried to play a "FOB victory" motion (when you get into the FOB core) in a singleplayer, but to my surprise it failed to play  and "mission successful" motion (wiping forehead) played flawlessly. It made me to look into motions more.</p>
+
+          <p>I decided to work on DLC motions from MGO - http://store.steampowered.com/sub/97952/. They are unavailable in single player and exist only in MGO. Let's take a closer look at them.</p>
+
+          <h3>Mod process</h3>
+
+          <p>Since animations have *.mtar extension, the only smart move would be to unpack all MGO files and run a search for them. I did that before and compiled list of all files in a handy repository - <a href="https://github.com/unknown321/mgsv_lua_dump/">https://github.com/unknown321/mgsv_lua_dump/</a>. List of files in fpk archives in chunk0 is stored in <code><a href="https://raw.githubusercontent.com/unknown321/mgsv_lua_dump/master/tpp/mgo/inf/chunk0/fpks/fpk_patches.txt">/tpp/mgo/inf/chunk0/fpks/fpk_patches.txt</a></code>. I recommend you to clone that repository and use something like grep to wade through lua code and files fast, GitHub search doesn't work on big files and has issues in general. After looking through gorillion of lines with 'mtar' in them you make a smart move and start thinking about how and where motions can be. File <code>/Assets/mgo/pack/player/motion/mgo_player_resident_motion.fpk</code> is the answer - it loads on the game start, has "player" and "motion" in name, has a nice size (over 18 megabytes). We can see the contents of that fpk in a link above (fpk_paths.txt) by just looking for <code>mgo_player_resident</code> - there is a <code>mgoplayer_resident.mtar</code> file which is definitely what we need.</p>
+
+          <p>Now we need to bring that file back into TPP. Using the same logic we find the file <code>\Assets\tpp\pack\player\motion\player2_resident_motion.fpk</code> in chunk0. Copy it somewhere else and unpack. Now it's time to combine them, just copypaste <code>mgoplayer_resident.mtar</code> into <code>player2_resident_motion_fpk\Assets\tpp\motion\mtar\player2\</code> directory. However it's not over yet.</p>
+
+          <p>Game still has no idea that we added new animations. Since "FOB victory" motion was available only while playing online missions, there had to be a way to make the game load them the same way it does for FOB missions. Let's take a look at <code>o50050_area.fpkd</code> which exists in 00.dat. Main file of our interest is <code>Assets\tpp\level_asset\chara\player\game_object\player2_online_motion.fox2</code>. Unpack the file, use <a href="https://github.com/Atvaark/FoxTool">FoxTool</a> to make a proper xml file out of it, open with your text editor. As you can see, it contains descriptions of what should be loaded into the memory, we are interested in <code>&lt;entity class="TppPlayer2AdditionalMtarData"&gt;</code> tag. It clearly adds <code>player_online.mtar</code>, so why don't we add MGO motions in the same way, but to singleplayer file? </code>Player2_resident_motion.fox2</code> file sits in chunk0, <code>player2_resident_motion.fpk<b>d</b></code>.</p>
+<pre><code>&lt;staticProperties&gt;
+        &lt;property name="name" type="String" container="StaticArray" arraySize="1"&gt;
+            &lt;value&gt;TppPlayer2AdditionalMtarData0000&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;property name="dataSet" type="EntityHandle" container="StaticArray" arraySize="1"&gt;
+            &lt;value&gt;0x05126751&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;property name="mtarFiles" type="FilePtr" container="DynamicArray" arraySize="1"&gt;
+            &lt;value&gt;/Assets/tpp/motion/mtar/player2/mgoplayer_resident.mtar&lt;/value&gt;
+        &lt;/property&gt;
+    &lt;/staticProperties&gt;
+    &lt;dynamicProperties /&gt;
+&lt;/entity&gt;</code></pre>
+
+        <p>Hashes and values are mostly irrelevant (aside from mtar path), it just worked after copypasting so I guess it's ok.</p>
+
+        <p>Great, now pack back that xml file into fox2 script with FoxTool and pack fpkd back using whatever packer you use. After all these manipulations we have our motions in the game, TPP will gladly load them along with others and since <code>player2_resident_motions</code> loads motions that play game-wide, our animations will be playable everywhere (including title screen and intro/outro helicopter sequences, cinematic cutscenes are not included). </p>
+
+        <p>Now we are almost ready to play our animations in the game, all we need is to call a function with a path to needed animation.</p>
+
+        <h3>Playing right animation</h3>
+        <p>Looking for *.gani in Lua scripts gives us file <code>/tpp/mgo/chunk0/Assets/mgo/level_asset/player/ParameterTables/AppealActions.lua</code> has a list of all appeal actions with paths to *.gani files. Copypaste one of the values and use function Player.RequestToPlayDirectMotion('mymotion','PATH_TO_GANI') to play it (or just use provided lua file, it has everything already). Tada you did it. Pics go here. Links to completed files here.</p>
+
+        <h3>Installation</h3>
+            <li>
+                Download <a href="https://mega.nz/#!EhYF3R5T!fbNL3AlIxz4LDjLEOWKVXNXNe9AlbNQzxS77VWJ43-E">animation_changer+script_loader pack</a>.
+            </li>
+            <li>
+                 Install script_loader.mgsv from archive (script_loader_IH.mgsv for compability with Infinite Heaven).
+            </li>
+            <li>
+                Install motions.mgsv.
+            </li>
+            <li>
+                Create directory <code>lua</code> in your main game directory (where mgsvtpp.exe is located). Put there files from <code>put_us_into[MGS_TPP-lua]</code> directory.
+            </li>
+            You are ready to go.
+            <br>
+            <u>NOTE: I don't use Snakebite, so provided archives are untested. Same goes for IH, I think it shoud be compatible.</u>
+        </ul>
+
+        <h3>Using the mod</h3>
+        <p>I use my mod along with my script loader which allows me to bind functions to keys via config file.<p>
+        <p>Hold zoom button (V) and action button (E) at the same time for about a second, loader will load code and bind it to keys. Use the following buttons to play animations:
+        <ul>
+            <li>PlayerPad.UP (arrow up) to play current animation</li>
+            <li>PlayerPad.DOWN (arrow down) to play next step in animation (beginning-idle-end)</li>
+            <li>PlayerPad.RIGHT (arrow right) to play next animation</li>
+            <li>PlayerPad.LEFT (arrow LEFT) to stop holding the animation (see issues below)</li>
+        </ul>
+        Feel free to rebind keys to whatever you want (aside from <code>ZOOM</code> and <code>ACTION</code>), list of keys here - <a href="http://wiki.tesnexus.com/index.php/Input_handling">http://wiki.tesnexus.com/index.php/Input_handling</a>. Reload the config right in the game using <code>ZOOM+ACTION</code> combination, no need to restart the game.
+        <p>Debug, repeat and hold options can be changed right in the animation_changer.lua. Make your changes, then hold <code>ZOOM+ACTION</code> to reload the script without exiting the game.</p>
+
+        <h3>Issues</h3>
+        <ul>
+            <li>
+                Animations are not playable during cinematic cutscenes.
+            </li>
+            <li>
+                MGO animations consist of 3 files - beginning, idle and end motions. Some poses can be repeated (see ani_repeat parameter), at least it works for 'mission clear' motion. If you set <code>ani_hold_forever</code> flag to true, after finishing the animation you will stand still in same pose unable to move. This is handy for posing; standing still can be interrupted by using <code>Player.RequestToStopDirectMotion()</code>, which is binded to 'arrow left' by default. <u>You have to interrupt it every time after playing a motion to be able to play another one if you have ani_hold_forever set to true</u> (off by default).</li>
+            <li>Sometimes motion won't play immidiately, you'll hear clacking sound (or debug messages if debug is on), but nothing will happen. Holding a button for longer time fixes that, I think game takes time to load motion or whatever.</li>
+            <li>
+                Increased loading times, nothing you can do about it.
+            </li>
+            <li>
+                Sometimes you can get stuck in animation and stopping it does nothing. No fix for that, only checkpoint reload/back to title can bring you control over your character back.
+            </li>
+            <li>
+                You cannot get names for more animations (let's say bear ones) without an unpacker (which doesn't exist).
+            </li>
+            <li>
+                MGO has the ability to mirror animations and TPP has not (at least I am unaware of it), so instead of 40+ motions we have only 28.
+            </li>
+        </ul>
+
+        <h3>Notes</h3>
+        <ul>
+            <li>Gani files definitely have some references to the sounds which are played every time you play an animation.</li>
+            <li>Mod works well with 'Good subsistance' mod which allows you to go around without weapons, resulting in weapon-free screenshots.(not public yet, links will be added later)</li>
+            <li>You can get out of helicopter by playing an animation, stopping it and running to the left or right (the faster your character is, the better). You can also get out from helicopter intro by playing an animation - that will leave you in the air, helicopter will land and immidiately leave the area.</li>
+        </ul>
+
+        <h3>Pics</h3>
+        <img src="http://images.akamai.steamusercontent.com/ugc/254839631193501050/0A1A699A97A93AA53BBC0E8110B7E8E727CB632F/">
+        <img src="http://images.akamai.steamusercontent.com/ugc/254839631193501286/5E0DBBB031FD740B28C4D8A0DC4C2C0CE71FBC4A/">
+        <img src="http://images.akamai.steamusercontent.com/ugc/254839631193501411/05DCA07DB833021263C20CC7F9A5A1B49A03AEB9/">
+        <img src="http://images.akamai.steamusercontent.com/ugc/254839631193501686/5107DA29A459241DD14BC01EFBC211B631ECEC73/">
+        <img src="http://images.akamai.steamusercontent.com/ugc/254839631193501818/0AA2008EB90E43E6F035785853A3098F3C63F221/">
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Metal Gear Solid V: The Phantom Pain technical information maintained by <a href="https://github.com/unknown321">unknown321</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
