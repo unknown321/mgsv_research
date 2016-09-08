@@ -27,20 +27,95 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-          As a modder, I restart game a lot of times and packing lua files back takes away my free time. That's why I had to make a loader, which reads lua scripts situated outside *.dat archives. It also is capable of binding functions used in external lua files to keys. Keys can be defined in a separate config file, stored outside of archives as well. The only thing you'll ever need to pack is the loader itself (and assets if you use them in your mod).
-
-          <br>
+          <h3>Intro</h3>
+          <p>
+          As a modder, I restart game a lot of times and packing lua files back takes away my free time. That's why I had to make a loader, which reads lua scripts situated outside *.dat archives. It also is capable of binding functions used in external lua files to key combinations. Keys can be defined in a separate config file, stored outside of archives as well. The only thing you'll ever need to pack is the loader itself (and assets if you use them in your mod).
+          </p>
+          
           <h3>Installation</h3>
-          Place <a href='link_to_loader'>LINK TO LOADER</a> into 00.dat, /Assets/tpp/script/lib/scriptloader.lua - drop it here. Add &lg;Entry FilePath="/Assets/tpp/script/lib/scriptloader.lua" Compressed="false" /&rg; into your 00.dat.xml (if you use GzsTool). If you use MGS_QAR_TOOL, add "STRING" to your 00.inf. 
-          Open 00\Assets\tpp\script\lib\Tpp.lua and find "/Assets/tpp/script/lib/TppMbFreeDemo.lua". Add after ', "/Assets/tpp/script/lib/scriptloader.lua" (yes, with a comma).
-          Open 00\Assets\tpp\script\lib\TppMain.lua and find "TppMission.UpdateForMissionLoad". Add after ',DropWeapon.Update' (with comma as well).
-          Pack your 00.dat. 
-
+          <h4>Manual</h4>
+          <ul>
+              <li>Place <a href='https://github.com/unknown321/mgsv_research/tree/gh-pages/mods/script_loader'>all lua files from here</a> 
+                  into 00.dat, <code>/Assets/tpp/script/lib/</code> - drop it there. 
+                  <br><u>GzsTool</u>:<br>
+                  Add <pre><code>&lt;Entry FilePath="/Assets/tpp/script/lib/script_loader.lua" Compressed="false" /&gt;
+&lt;Entry FilePath="/Assets/tpp/script/lib/helpers.lua" Compressed="false" /&gt;
+&lt;Entry FilePath="/Assets/tpp/script/lib/json.lua" Compressed="false" /&gt;</code></pre> to your 00.dat.xml
+                  <br><u>MGS_QAR_TOOL</u>:<br>
+                  <h1>JSONHELPERS hash</h1>
+                  Add <pre><code>18e34bb1306b261b|00\Assets\tpp\script\lib\script_loader.lua key=0 version=0 compressed=0</code></pre> to your 00.inf.
+              </li> 
+              <li>Open <code>00\Assets\tpp\script\lib\Tpp.lua</code> and find<br><code>"/Assets/tpp/script/lib/TppMbFreeDemo.lua"</code>. Add after it: <pre><code>, "/Assets/tpp/script/lib/scriptloader.lua"</code></pre> (yes, with a comma).</li>
+                  <li>Open <code>00\Assets\tpp\script\lib\TppMain.lua</code> and find<br><code>"TppMission.UpdateForMissionLoad"</code>. Add after it:<pre><code>,DropWeapon.Update</code></pre> (with comma as well).</li>
+              <li>Pack your 00.dat.</li>
+              <li>Create folder 'lua' in your game directory (<code>SteamApps\common\MGS_TPP\lua</code>) and put <a href='https://github.com/unknown321/mgsv_research/tree/gh-pages/mods/script_loader/config/script_loader.json'>script_loader.json</a> there (config file).</li>
+          </ul>  
+          <h4>Snakebite</h4>
+          <ul>
+              <li>Install <a href=''>script_loader.mgsv</a> using Snakebite (<a href=''>script_loader_IH.mgsv</a> - Infinite Heaven compatible version)</li>
+             <li>Create folder 'lua' in your game directory (<code>SteamApps\common\MGS_TPP\lua</code>) and put
+                 <a href='https://github.com/unknown321/mgsv_research/tree/gh-pages/mods/script_loader/config/script_loader.json'>script_loader.json</a> there.</li>
+          </ul>
           <h3>Usage</h3>
-          Script loader will look for your lua files in different directories, I use main game directory (SteamApps\common\MGS_TPP\lua). You will need to create 'lua' folder there and put your scripts there along with provided config. Lua scripts have to be listed in config like this: EXAMPLE. 
-    By pressing MODKEY+R loader will reload all scripts mentioned in config.
-    <h3>Binding keys</h4>
-    blabla keys.
+          <p>
+          Hold <code>ZOOM+ACTION</code> (V+E) to bind functions to keys, then hold <code>ZOOM+_your_key</code> to call your function.<br>
+          Script loader will look for your lua files in different directories
+          (listed in LUA variable <code>_G['package']['path']</code>), I use main game 
+          directory (SteamApps\common\MGS_TPP\lua). You will need to create 'lua' folder 
+          there and put your scripts there along with provided config. 
+          An <a href="https://github.com/unknown321/mgsv_research/tree/gh-pages/mods/script_loader/example/example_mod.lua">example script</a> is included.
+          </p>
+
+          <p>
+            Every time you bind functions to keys, script loader reloads all modules listed in config file,
+            so it is perfect for debugging your awesome mod. No game restart, no packing, no loading.
+          </p>
+          <p>
+            It also announces typical errors in your code (ie division by zero, wrong syntax or stuff like that) - 
+            just like regular interpreter does. It won't catch errors from MGSV functions though, so don't expect much.
+          </p>
+          <p>
+          Everyting you call can be logged in <code>MGS_TPP\log.txt</code> file. <br>Add <code>local helpers = require("helpers")</code>,
+          then <br>use <code>helpers.log(str, announce, level)</code>
+            in your code to put log messages into the log, no more waiting for slow terminal output.
+          </p>
+          <h4>Config file</h4>
+          <p>
+            Config is written in json because it allows me to use nested arrays. 
+            Not a fan of INI and YAML looks incomfortable.
+          </p>
+          <p>
+            Structure:
+            <ul>
+                <li><code>keys</code> - array of bindable keys</li>
+                    <ul>
+                        <li>
+                            <code>_key_</code> - key as represented in the game, see 
+                            <a href="http://wiki.tesnexus.com/index.php/Input_handling">link</a> for all key names. Example: <code>PlayerPad.UP</code>
+                        </li>
+                        <ul>
+                            <li><code>module</code> - name of your imported lua module. Example: <code>example_script</code></li>
+                            <li><code>function</code> - function which will be called after holding <code>ZOOM+_key_</code>. Example: <code>test</code></li>
+                        </ul>
+                    </ul>
+                <li><code>config</code> - loader's config</li>
+                <ul>
+                    <li><code>play_sound</code> - true/false, if set to true, plays a clacking terminal sound when you execute your function</li>
+                </ul>
+            </ul>
+
+          </p>
+
+          <p>
+          Hold <code>ZOOM+ACTION</code> (V+E) to bind functions to keys listed in config file. 
+          </p>
+    <h3>Binding more keys</h3>
+    <p>
+    Just add a new entry into <code>keys</code> section based on example above then hold <code>ZOOM+ACTION</code> to apply changes.
+    </p>
+    <p>
+    Important note: functions with arguments have to be wrapped into a wrapper function without arguments. Example: your function <code>do_awesome_stuff(1,2,3)</code> has to be wrapped in another function <code>do_something()</code>, which will be referenced in config.
+    </p>
     <h3>Links</h3>
       </section>
     </div>

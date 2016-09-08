@@ -1,0 +1,24 @@
+{
+	"keys":
+	{
+		"PlayerPad.UP": 
+		{
+			"module":"example",
+			"function":"test"
+		},
+		"PlayerPad.RIGHT": 
+		{
+			"module":"example",
+			"function":"log_example"
+		},
+		"PlayerPad.LEFT": 
+		{
+			"module":"example",
+			"function":"wrapper"
+		}
+        },
+	"settings":
+	{
+		"play_sound":true
+	}
+}
