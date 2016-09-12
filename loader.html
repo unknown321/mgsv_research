@@ -41,9 +41,11 @@
                   Add <pre><code>&lt;Entry FilePath="/Assets/tpp/script/lib/script_loader.lua" Compressed="false" /&gt;
 &lt;Entry FilePath="/Assets/tpp/script/lib/helpers.lua" Compressed="false" /&gt;
 &lt;Entry FilePath="/Assets/tpp/script/lib/json.lua" Compressed="false" /&gt;</code></pre> to your 00.dat.xml
+                  <hr>
                   <br><u>MGS_QAR_TOOL</u>:<br>
-                  <h1>JSONHELPERS hash</h1>
-                  Add <pre><code>18e34bb1306b261b|00\Assets\tpp\script\lib\script_loader.lua key=0 version=0 compressed=0</code></pre> to your 00.inf.
+                  Add <pre><code>18e34bb1306b261b|00\Assets\tpp\script\lib\script_loader.lua key=0 version=0 compressed=0
+18e29a375a6fa972|00\Assets\tpp\script\lib\helpers.lua key=0 version=0 compressed=0
+18e2a6153e1da644|00\Assets\tpp\script\lib\json.lua key=0 version=0 compressed=0</code></pre> to your 00.inf.
               </li> 
               <li>Open <code>00\Assets\tpp\script\lib\Tpp.lua</code> and find<br><code>"/Assets/tpp/script/lib/TppMbFreeDemo.lua"</code>. Add after it: <pre><code>, "/Assets/tpp/script/lib/scriptloader.lua"</code></pre> (yes, with a comma).</li>
                   <li>Open <code>00\Assets\tpp\script\lib\TppMain.lua</code> and find<br><code>"TppMission.UpdateForMissionLoad"</code>. Add after it:<pre><code>,DropWeapon.Update</code></pre> (with comma as well).</li>
