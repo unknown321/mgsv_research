@@ -5,6 +5,11 @@
 		{
 			"module":"good_subsistence",
 			"function":"switch_fulton"
+		},
+		"PlayerPad.DOWN": 
+		{
+			"module":"good_subsistence",
+			"function":"drop_weapon"
 		}
 	},
 	"settings":
