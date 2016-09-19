@@ -1,0 +1,14 @@
+{
+	"keys":
+	{
+		"PlayerPad.UP": 
+		{
+			"module":"good_subsistence",
+			"function":"switch_fulton"
+		}
+	},
+	"settings":
+	{
+		"play_sound":true
+	}
+}
