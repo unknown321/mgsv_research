@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="good_subsistence" Version="1.0" Author="unknown" Website="https://unknown321.github.io/mgsv_research/weapons.html">
+  <MGSVersion Version="1.0.6.0" />
+  <SBVersion Version="0.0.0.0" />
+  <Description>Good subsistence mod that allows you to select 'None' on loadout screen for primary hip and secondary weapons.
+
+After installing the mod, develop new weapons named "---", then select them on loadout screen (at the end of the list).
+
+Compatible with MGSV 1.10 (title screen).
+
+Fulton can be disabled using script_loader. See https://unknown321.github.io/mgsv_research/weapons.html for more info on usage and configuration. </Description>
+  <QarEntries />
+  <FpkEntries />
+</ModEntry>
