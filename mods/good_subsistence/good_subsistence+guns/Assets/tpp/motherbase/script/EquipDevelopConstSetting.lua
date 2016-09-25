@@ -17751,16 +17751,16 @@ TppMotherBaseManagement.RegCstDev{
 	p03=0,
 	p04=0,
 	p05=65535,
-	p06="cmmn_wp_none",
-	p07="cmmn_wp_none",
+--	p06="cmmn_wp_none",
+--	p07="cmmn_wp_none",
 	p08="/Assets/tpp/ui/texture/EquipIcon/ui_dev_dummy_alp",
 	p09=TppMbDev.EQP_DEV_GROUP_WEAPON_010,
-	p10="cmmn_wp_none",
-	p30="cmmn_wp_none",
+--	p10="cmmn_wp_none",
+--	p30="cmmn_wp_none",
 	p31=0,
-	p32=1,
-	p33=1,
-	p34=1,
+	p32=0,
+	p33=0,
+	p34=0,
 	p35=0,
 	p36=0
 }
@@ -17771,16 +17771,16 @@ TppMotherBaseManagement.RegCstDev{
 	p03=0,
 	p04=0,
 	p05=65535,
-	p06="cmmn_wp_none",
-	p07="cmmn_wp_none",
+--	p06="cmmn_wp_none",
+--	p07="cmmn_wp_none",
 	p08="/Assets/tpp/ui/texture/EquipIcon/ui_dev_dummy_alp",
 	p09=TppMbDev.EQP_DEV_GROUP_WEAPON_010,
-	p10="cmmn_wp_none",
-	p30="cmmn_wp_none",
+--	p10="cmmn_wp_none",
+--	p30="cmmn_wp_none",
 	p31=0,
-	p32=1,
-	p33=1,
-	p34=1,
+	p32=0,
+	p33=0,
+	p34=0,
 	p35=0,
 	p36=0
 }
@@ -17799,7 +17799,7 @@ TppMotherBaseManagement.RegCstDev{
 	p31=0,
 	p32=0,
 	p33=0,
-	p34=1,
+	p34=0,
 	p35=0,
 	p36=0
 }
@@ -17818,7 +17818,7 @@ TppMotherBaseManagement.RegCstDev{
 	p31=0,
 	p32=0,
 	p33=0,
-	p34=1,
+	p34=0,
 	p35=0,
 	p36=0
 }
@@ -17837,7 +17837,7 @@ TppMotherBaseManagement.RegCstDev{
 	p31=0,
 	p32=0,
 	p33=0,
-	p34=1,
+	p34=0,
 	p35=0,
 	p36=0
 }
