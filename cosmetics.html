@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Metal Gear Solid V: The Phantom Pain technical information : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Metal Gear Solid V: The Phantom Pain technical information</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/unknown321/mgsv_research">View on GitHub</a>
+
+          <h1 id="project_title">Metal Gear Solid V: The Phantom Pain technical information</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+          <h2>Comsetics</h2>
+          <h3>Introduction</h3>
+          <blockquote>Throughout history, men have worn hats as a way of showing how much 
+              better they are than other men. “I buy hats,” a behatted man seems to say. 
+              “I am better than you.”
+              <br><br>
+              In wartime, hats were a useful way of conferring rank, and ensuring that casualties 
+              were confined to the lower classes (hence the famous command of “Don't fire till you 
+              see the tops of their heads” at the Battle of Bunker Hill by William Prescott, a 
+              general renowned for only shooting enemy combatants who were poor). During peacetime, 
+              hats have been instrumental for men to let the non-hatted know just who is wearing 
+              the hat around here.
+          </blockquote>
+
+          <hr>
+          <p>
+          <img src='images/cosmetics_1.jpg'>
+              People need cosmetics and need them badly. MGSV is not an exception.
+          </p>
+            <br>
+            <p>A lot of cosmetics were introduced to Metal Gear with MGO3 - wide variety of headgear 
+                along with swimsuits and other tactical stuff. Unfortunately KONAMI forgot to add them 
+                to singleplayer. It took them about a year to start porting MGO cosmetics back to TPP 
+                as FOB event rewards. Judging by amount of cosmetics, it will take them years to port 
+                everything (if they are going to port all of it). But models are already in the game 
+                - what stops us from modding it from MGO to TPP?
+            </p>
+            <hr>
+           
+            <h3>Porting cosmetics</h3>
+            <p>The easiest way would be direct model porting. It is achieved by editing already existing 
+            models, usually in hex editor or some 3d software. All model mods on nexusmods are made 
+            using those methods. It works, MGO cosmetics are in TPP, but there are issues.</p>
+            <p>
+                <ul>
+                    <li>Every time you want a cosmetics change, you will have to repack the game archives;</li>
+                    <li>process of editing models is definitely not a fast one;</li>
+                    <li>cannot switch cosmetics on the fly like the game does;</li>
+                    <li>mod packs are huge.</li>
+                </ul>
+                The best example is <a href="http://www.nexusmods.com/metalgearsolidvtpp/mods/228/?">Multi Quiet Player Mod</a>.
+                Full version takes <u>1.4 GBs</u>, and even with that you are tied to quiet's face.
+            </p>
+
+            <p><u>Conclusion</u>: replacing/editing models sucks. It works, but why would we replace models like that, 
+            when the game can do the same programmatically?</p>
+
+            <h3>Coder's way</h3>
+            <p>Game is capable of manipulating models/cosmetics in the real time, but how does it do that?
+            I've found 5 ways:
+            <ul>
+                <li>Changing model using user variables (vars.playerFaceId);</li>
+                <li>adding new weapon entries;</li>
+                <li>chicken hats;</li>
+                <li>changing model using fv2 files;</li>
+                <li>changing model using .parts files.</li>
+            </ul>
+            </p>
+
+            <h3>User variables</h3>
+            <p>
+            By changing <code>vars.playerFaceId</code> and <code>vars.playerType</code>(was it playertype?) you 
+            can change your face at will (assuming you play as DD soldier). You can see full list of faces 
+            in prettified file <code>Soldier2FaceAndBodyData.lua</code> in 
+            <a href="http://www.nexusmods.com/metalgearsolidvtpp/mods/45/">Infinite Heaven mod</a>.
+            Via changing variables you select one of the predefined face variations - that includes hair, hair colour, 
+            skin colour, face paintings, eye color, gender, etc - studying the file will give you a lot of information 
+            about that. You can do it using IH - see <a href="https://youtu.be/a0PJJVkDQe8">https://youtu.be/a0PJJVkDQe8</a>.
+            </p>
+
+            <p>
+            What prevents us from using that method? The problem is - faces are pre-baked. Let's take a look at 
+            bioengineer from mission 5 "Over the Fence". His glasses are a part of his face and are unseparatable.
+            </p>
+            <p><img src='images/cosmetics_2.jpg'></p>
+
+            <p>
+            More than that, we don't have full control on what will be replaced - we are still bound by pre-baked 
+            models. That means that for every head/body cosmetic we will have to make a separate model which will 
+            consist of regular model + mgo cosmetic. Not good since we need more freedom - like in mgo where you just 
+            put hats on yourself without any modifications to your face/outfit.
+            </p>
+            <p><u>Conclusion</u>: it sucks, not enough freedom, still need to edit models.</p>
+
+            <h3>New weapon entries</h3>
+            <p>By putting on your Night Vision Goggles you change your appearance by the press of the button. 
+            Sounds perfect - 8 slots of 'items' gives you some variety. But of course it only sounds nice. 
+            <br>
+            Issues:
+            <ul>
+                <li>Green tint for the duration;</li>
+                <li>hat model is floating in front of your head, not on top of it;</li>
+                <li>texture problems (not like it matters for now);</li>
+                <li>NVG has a meter (probably can be set to infinite, equip icon can be hidden as well). 0 = NVG disappears.</li>
+            </ul>
+            </p>
+            <p><img src='images/cosmetics_3.jpg'></p>
+            <p><u>Conclusion</u>: it sucks, can't see hats.</p> 
+
+            <h3>Chicken hats</h3>
+            <p>After failing a couple of times game suggests to equip a chicken/chick hat which is attached to 
+            the head and looks like a hat - just like we need. No, it doesn't work well enough.
+            <br>
+            Issues:
+            <ul>
+                <li>You need to activate chick mode first - it requires reloading a checkpoint so it is not realtime;</li>
+                <li>there are only 2 models to replace, which gives us little to none variety (and more frequent repacking);</li>
+                <li>hat is attached to the head, what about body costumes (ie underboob outfit)?</li>
+                <li>you are stuck in chick/chicken mode, enemies won't attack and chicken head disappears after 3 alerts.</li>
+            </ul>
+            Also there is no code that can modify behaviour above, just 2 variables that turn chick/chicken mode on and off.
+            </p>
+            <p><img src='images/cosmetics_5.jpg'></p>
+            <p><u>Conclusion</u>: it sucks, not enough freedom, chicken mode on, you are clucking.</p>
+
+            <h3>FV2 files</h3>
+            <p>Models in the game are hidden in fmdl files. Important thing is, you can have multiplie models in one fmdl file.</p>
+            <p>It was discovered by cra0kalo and volfin - <a href="http://forum.xentax.com/viewtopic.php?p=102492#p102492">http://forum.xentax.com/viewtopic.php?p=102492#p102492</a>.</p>
+            <hr>
+            <p>Everything below is my theory on how fv2 files work.</p>
+            <hr>
+            <p>FOVA probably stands for <b><u>FO</u></b>x<b><u>VA</u></b>riations or whatever.</p>
+            <p>There are two instances of game directly using fv2 files to change object's appearance. 
+                <ul>
+                    <li><code>master/chunk3/Assets/tpp/level/mission2/quest/mtbs/Command/quest_child_dog.lua</code>
+                        - DD's model will change in cutscene (the one where doggo becomes big doggo from small doggo).</li>
+                    <li><code>master/0/00/Assets/tpp/level/mission2/story/s10010/s10010_sequence.lua:   s10010_sequence.ChangePlayerFova</code></li>
+                </ul>
+                First instance can be seen on youtube, search for it yourself; I never bothered with it since it works with
+                GameObjects and there are some differences between GameObject and Player objects.
+                Second one is much more interesting.
+            </p>
+            <p>By providing right fv2 file snake drastically changes appearance - his bandage is removed, 
+            he gets burns and cuts body-wide (mesh and texture manipulations). 
+            All of this without any loadings, instanst. Sounds perfect for our cause.
+            </p>
+            <p><img src='images/cosmetics_4.jpg'></p>
+            <p>Issues:
+                <ul>
+                    <li>How do we add hat cosmetics into our models? Not as part of main model, but as a separate 
+                        model as seen on screenshot from xentax thread? This will require modifying every model - 
+                        snake, hospital snake, dd soldier etc (see <code>tpp/master/0/00/Tpp/start.lua</code>, Player.RegisterPartsPackagePath).
+                        That will be a huge advantage since there will be many cosmetics in one file giving us freedom 
+                        and reducing mod size;
+                    </li>
+                    <li><u>how do we make a proper fv2 file that will switch models properly?</u> This is the biggest 
+                    problem - fv2 files are tiny, have some bytes in them and yet they do so much;</li>
+                    <li>applying wrong fv2 file will crash the game.</li>
+            </p>
+             <p><u>Conclusion</u>: it is a huge improvement over all methods above, multiplie body-wide cosmetics.
+             No way of implementing with tools we have atm since cra0kalo broke his release server and apparently 
+             stopped his research - <a href="https://facepunch.com/showthread.php?t=1443449&p=49336023&viewfull=1#post49336023">https://facepunch.com/showthread.php?t=1443449&p=49336023&viewfull=1#post49336023</a>.</p>
+            
+             <h3>Parts</h3>
+             <p>All objects in the game consist of parts. As you have seen above, game has different .parts 
+             for different types of player. .parts files bind together everything related to the object - 
+             .fmdl model, .sim/.ph physics, .frig rig files, .frdv bone files and everything else. Convert 
+             it to readable xml using FoxTool.</p>
+
+             <p>
+             For example, skullface (<code>chunk0/Assets/tpp/pack/mission2/common/mis_com_skullface.fpkd</code>) 
+             consist of his model, 2 models of his hat, 3 ampules with parasites and a case. This sounds <u>perfect</u>.
+             Nothing stops us from adding hats to player parts file, just copypaste the structure from skullface and 
+             change some paths, pack model/textures and viola. Or at least that's what I thought.
+             </p>
+
+             <p>Unfortunately game needs to know which models to render - skullface doesn't run around with case 
+             and 2 hats all the time, even though they are referenced in .parts file. How does the game knows what 
+             to render at this exact moment? I suppose that is decided by fv2 files, which are a mystery, or 
+             it is defined somewhere in demo files.
+             </p>
+             <p><img src='images/cosmetics_6.jpg'></p>
+            <p>There is some code in mgo, that <i>realizes</i> parts and attaches them one to another.
+            See file <code>114716d115c13_fpkd/Assets/mgo/script/actor/mgoTeamsneakFlag.lua</code> - mgoTeamsneakFlag.lua 
+            exists in multiplie fpks, there are unminified versions of that file with nice variable names. Function 
+            this.Construct is the function that is called twice while loading mgo level (cloak and dagger mode). 
+            Apparently it creates disk objects and attaches effects to it. Game also attaches blue disk effect above 
+            your head using .parts file using code from that lua file.
+            <pre><code>if PartsIndex == nil then
+    actor:DetachAndTearDownAllParts()
+    local success = nil
+    success, PartsIndex = MgoParts.Realize( PartsFile, 1, 1 )
+    if not success then
+        PartsIndex = nil
+        Fox.Error( "mgoFlag:Construct(): Failed to realize parts " .. PartsFile )
+    else
+        actor:AttachParts( PartsIndex )
+        MgoParts.SetVisibility( PartsIndex, true )
+    end
+end</code></pre>
+            </p>
+
+            <p>
+            However I was unable to reproduce it no matter what. What is 'actor'? It has some nice methods, but I can't 
+            find where do you get it - probably this part is called by C part of the engine. There are no classes 
+            with these methods in <a href="https://github.com/unknown321/mgsvdump/">my lua dump</a> either. And even 
+            if we find out, what is that 'actor' thing is, there might be a chance that there is no such thing in TPP.
+            Some classes are MGO exclusive (such as MGOactor and Gear), so even though that 'actor' can attach parts 
+            with a handy method, there might be no such class for main game.
+            </p>
+
+            <p>Actor instance methods:
+            <ul>
+             <li>SetTransform</li>
+             <li>AttachToGameObject</li>
+             <li>AddActionForPlayer</li>
+             <li>IsAttached</li>
+             <li>GetInitialTransform</li>
+             <li>UpdateMarker</li>
+             <li>GetMessageValet</li>
+             <li>SendMessage</li>
+             <li>DisableMarker</li>
+             <li>GetTable</li>
+             <li>RequestLineCheck</li>
+             <li>RemoveActionForPlayer</li>
+             <li>SendTriggeredEventSignal</li>
+             <li>GetParm</li>
+             <li>GetGameObjectId</li>
+             <li>GetScaledTime</li>
+             <li>GetTransform</li>
+             <li>DetachAndTearDownAllParts</li>
+             <li>SetActive</li>
+             <li>AttachParts</li>
+             <li>DetachParts</li>
+             <li>Detach</li>
+             <li>GetAttachedToGameObject</li>
+             <li>IsActive</li>
+             <li>EnableMarker</li>
+            </ul>
+            </p>
+
+            <p>I am pretty sure that similar code runs when you call Player.AttachGasMask function (Shining Lights mission):
+            game realizes a model, then attaches it to your mouth bone/connect point. Unfortunately the realization is hidden in C.
+            </p>
+
+            <p><u>Conclusion</u>: This is the way how things should be done - attaching objects one to another using code.
+            The moment we understand what 'actor' is and how to 'realize' parts without MgoParts class, realtime change 
+            of cosmetics in singleplayer will become a reality: just pack some hat fmdls into your player pack, add some 
+            entries in .parts file then change cosmetics with a couple of code strings. 
+            Until then hex editor and humongous mods are the only answer.</p>
+
+            
+           
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Metal Gear Solid V: The Phantom Pain technical information maintained by <a href="https://github.com/unknown321">unknown321</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
