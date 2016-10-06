@@ -27,7 +27,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-          <h2>Comsetics</h2>
+          <h2>Cosmetics</h2>
           <h3>Introduction</h3>
           <blockquote>Throughout history, men have worn hats as a way of showing how much 
               better they are than other men. “I buy hats,” a behatted man seems to say. 
@@ -261,6 +261,47 @@ end</code></pre>
 
             <p>I am pretty sure that similar code runs when you call Player.AttachGasMask function (Shining Lights mission):
             game realizes a model, then attaches it to your mouth bone/connect point. Unfortunately the realization is hidden in C.
+            </p>
+
+            <p>
+            Let's take a look back - at Ground Zeroes. Snake gets a nice cigar after finishing main mission
+            - <code>data_02/title_datas_fpkd/Assets/tpp/ui/GraphAsset/gz/gz_title_message.lua</code>
+            <pre><code>Fox.Log(":: set tobacco and tobacco motion::")
+TppDemoPuppet.CreateAttachmentAndAttachToMtp("title_sneak","cig","MTP_RHAND_A")
+TppDemoPuppet.CreateAttachmentPartsEffect("title_sneak", "cig", "CigarSmoke" )
+TppDemoPuppet.SetAttachmentMeshVisible("title_sneak", "cig", "MESH_FIRE_IV", true )</code></pre>
+            <img src='images/cosmetics_8.gif'>
+            <br>
+            I <i>assume</i> that "CigarSmoke" and "cig" are listed in .parts file for snake, because I cannot 
+            unpack corresponding fpkd files (gzs_tool gives OoM exception while MGSV_FPK_TOOL just closes).
+            See <code>data_02\Assets\tpp\pack\player</code> directory.
+            </p>
+
+            <p>
+            Unfortunately we don't have direct access to TppDemoPuppet class in TPP. Probably it was too low-leveled and 
+            KojiPro decided to make nice wraps around it and hide parent class.
+            </p>
+
+            <p>
+            It seems that effects/attachments have to be listed in .parts listing, judging by file 
+            <code>chunk0\Assets\tpp\pack\player\parts\plparts_normal_fpkd\Assets\tpp\parts\chara\sna\sna0_main0_def_v00.parts</code>
+            A closer look:
+            <pre><code>&lt;entity class="EffectDescription" classVersion="6" addr="0x067B5DB0" unknown1="232" unknown2="39854"&gt;
+&lt;staticProperties&gt;
+    &lt;property name="name" type="String" container="StaticArray" arraySize="1"&gt;
+        &lt;value&gt;EffectDescription0009&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property name="partName" type="String" container="StaticArray" arraySize="1"&gt;
+      &lt;value&gt;EmblemFlare&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property name="connectDestinationSkelNames" type="String" container="DynamicArray" arraySize="1"&gt;
+      &lt;value&gt;SKL_011_LUARM&lt;/value&gt;
+    &lt;/property&gt;</code></pre>
+        What do we see here? Some flare effect on Left Upper Arm - that's diamond on your shoulder that you get after mission 43. 
+        It means that effects and additional models mentioned in .parts file are loaded along with your main model; they 
+        are toggled by some code hidden from our sight. This effect in particular is activated by 
+        <code>Player.SetUseBlackDiamondEmblem()</code> function - no clear realization as in GZ, another wrapper function.
+        <img src='images/cosmetics_9.jpg'>
             </p>
 
             <p><u>Conclusion</u>: This is the way how things should be done - attaching objects one to another using code.
