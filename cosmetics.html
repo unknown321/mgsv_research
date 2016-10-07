@@ -149,7 +149,7 @@
             <hr>
             <p>Everything below is my theory on how fv2 files work.</p>
             <hr>
-            <p>FOVA probably stands for <b><u>FO</u></b>x<b><u>VA</u></b>riations or whatever.</p>
+            <p>FOVA stands for <b><u>FO</u></b>rm<b><u>VA</u></b>riations.</p>
             <p>There are two instances of game directly using fv2 files to change object's appearance. 
                 <ul>
                     <li><code>master/chunk3/Assets/tpp/level/mission2/quest/mtbs/Command/quest_child_dog.lua</code>
@@ -176,6 +176,15 @@
                     <li><u>how do we make a proper fv2 file that will switch models properly?</u> This is the biggest 
                     problem - fv2 files are tiny, have some bytes in them and yet they do so much;</li>
                     <li>applying wrong fv2 file will crash the game.</li>
+            </p>
+
+            <p>
+            Notes: changing <i>player's</i> fova via <code>GameObject.SendCommand</code> does absolutely nothing. 
+            However it works for npcs - ie Ocelot in Phantom Limbs. Ocelot loses his eyewear by changing his body 
+            id - try 370-371-372 to watch his glasses magically appear and disappear. Applying modified fv2 file to 
+            npc <u>doesn't crash the game even if it's wrong</u> (tested by replacing everything aside from header 
+            with zeroes). Does this mean that game has fallback mechanism for GameObject commands? Are there any checks 
+            before changing fova? Why is there no such check for player fv2s?
             </p>
              <p><u>Conclusion</u>: it is a huge improvement over all methods above, multiplie body-wide cosmetics.
              No way of implementing with tools we have atm since cra0kalo broke his release server and apparently 
@@ -302,6 +311,18 @@ TppDemoPuppet.SetAttachmentMeshVisible("title_sneak", "cig", "MESH_FIRE_IV", tru
         are toggled by some code hidden from our sight. This effect in particular is activated by 
         <code>Player.SetUseBlackDiamondEmblem()</code> function - no clear realization as in GZ, another wrapper function.
         <img src='images/cosmetics_9.jpg'>
+            </p>
+
+            <p>
+            Note: Ocelot in Phantom Limbs has his eyewear attached solely by fv2 files! Not a single entry about 
+            glasses in his .parts. But Miller has "Sunglasses" entry in his .parts; they are not attached 
+            to his face, becoming part of him only after snake puts them on (or not?). Even worse: Miller doesn't have 
+            any fv2 files related to him.<br>
+            <table>
+                <tr><td></td><td>Parts entry</td><td>fv2 files</td></tr>
+                <tr><td>Miller</td><td>"Sunglasses"</td><td>None</td></tr>
+                <tr><td>Ocelot</td><td>None</td><td>3 fv2 files</td></tr>
+            </table>
             </p>
 
             <p><u>Conclusion</u>: This is the way how things should be done - attaching objects one to another using code.
