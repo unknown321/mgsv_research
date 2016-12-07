@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Metal Gear Solid V: The Phantom Pain technical information : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Metal Gear Solid V: The Phantom Pain technical information</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/unknown321/mgsv_research">View on GitHub</a>
+
+          <h1 id="project_title">Metal Gear Solid V: The Phantom Pain technical information</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+      <p>All pictures are pretty big, <code>right click->view image</code> to see the details.</p>
+        <h3>FV2</h3>
+            <p>FV2 files (Form Variation) are used in MGSV:GZ and MGSV:TPP to change the appearance of models.</p>
+            <p>They are used to show and hide meshes, apply different textures to meshes, apply physical 
+            simulation files, attach models and probably something else. </p>
+            <p>Before going into details, I need to explain how MGSV handles models.</p>
+
+        <h3>Models</h3>
+            <p>This info relates only to player and NPC models, wasn't interested in vehicles/weapons/animals.</p>
+            <p>TPP models usually consist of 2 parts - head and body.</p>
+                <img src='images/fv2_1.png'>
+                <img src='images/fv2_2.png'>
+            <p>It allows the game to modify face without affecting the body and vice versa, 
+            i.e. equipping balaclava or changing your camo pattern.</p>
+            <p>Game uses it's own mechanism to attach head to the body, probably using .parts files 
+            (without using fv2 to do it). I think that this mechanism is used in function
+            <code>Player.AttachGasMask()</code> and <code>Player.VisibleGasMask()</code>
+            (mission 43 Shining Lights, when Snake puts on his respirator).</p>
+            <p>Models have mesh, bones and connection point identificators in them. These
+            identificators are used in .fv2 in hashed form to specify the element to modify.
+            Partial list of these hashes was compiled by <a href='http://forum.xentax.com/viewtopic.php?p=121100#p121100'>YouRePrettyGood</a>.
+            Hashing method is unknown. Only first 4 bytes of these hashes are used in fv2,
+            full hashes can be found in fmdl.</p>
+        
+            <hr>
+            <p>It means that in order to hide some mesh on Snake's face we need to:
+            <ul>
+                <li>Find his current face model;</li>
+                <li>find corresponding mesh and it's name</li>
+                <li>make a fv2 file that will hide mesh using it's name.</li>
+            </ul>
+
+            Unfortunately there are problems.<br>
+            Problem #1: it is hard to find hashed name of mesh, fmdl is not fully explored 
+            (or at least I am unaware of it).<br>
+            Problem #2: you need a command to show/hide meshes.<br>
+
+        <h3>FV2 commands</h3>
+            <p>In order to manipulate parts of model, fv2 needs not only names of these parts,
+            but also commands on how to manipulate them.</p>
+            <p>These commands are also hashed in the same way as mesh names, but 
+            there are no unhashed names. A couple of them are included in list above 
+            (<code>Base_Tex_SRGB</code> for example), but others are a complete mystery.
+            Command are usually followed by a link to hashed filepath.
+            Providing wrong filepath or wrong filetype will usually crash the game, 
+            i.e. the 'apply texture' command accepts only textures, 'hide mesh' 
+            accepts hashed mesh names.</p>
+            <p>You will also need to use right syntax, which differs from command 
+            to command. This is also a big problem.</p>
+
+        <h3>Format structure</h3>
+        <p>First structure was made by <a href='http://forum.xentax.com/viewtopic.php?p=121318#p121318'>YouRePrettyGood</a>.
+        Most of that info is right, but some sections are doubtful. Please keep in mind that 
+        I digged format with only one purpose - to combine 2 fmdls, so some bytes 
+        were ignored.</p>
+        <p>I am using file master\chunk0\fpks\plfova_sna0_face6_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face6_v00.fv2 as an example.</p>
+        <hr>
+        <h5>Header</h5>
+            <ul>
+                <li>8 bytes - <code>464F563277696E01</code> for TPP on PC</li>
+            </ul>
+        <h5>Index</h5>
+            <p>
+                Index contains info about section offsets, amount of referenced files, 
+                amount of filetypes (?).
+            </p>
+            <p>
+                Address: 0x8-0x27.
+            </p>
+            <ul>
+                <li>Section 2 offset - 2 bytes, <code>3800</code> (56 in dec)</li>
+                <li>Section 4 offset - 2 bytes, <code>4000</code> (64 in dec)</li>
+                <li>Number of entries in section 2 - 2 bytes, <code>0000</code>(0)</li>
+                <li>Number of entries in section 4 - 2 bytes, <code>0200</code>(2)</li>
+                <li>Section 3 offset - 2 bytes, <code>4000</code>(64)</li>
+                <li>Number of entries in section 3 - 2 bytes, always <code>0000</code>(0)</li>
+                <li>12 unknown bytes, can't say for sure what are they for - see the pic</li>
+                <li>4 unknown bytes, can't say for sure what are they for</li>
+                <li>Byte 0x24 has 3 states:
+                    <ul>
+                        <li>00: used in face deco fovas, body and camos</li>
+                        <li>01: face and hair fovas</li>
+                        <li>02: 8 files:
+                            <pre><code>chunk0\cm_unq_v007_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v007_eye0.fv2
+chunk0\plfova_sna0_arm1_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm1_v00.fv2
+chunk0\plfova_sna0_arm2_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm2_v00.fv2
+chunk1\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_a.fv2
+chunk1\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_b.fv2
+chunk1\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_c.fv2
+chunk1\sva0_main0_v00_fpk\Assets\tpp\fova\chara\svs\sva0_v00_a.fv2
+chunk2\f30011_fpk\Assets\tpp\fova\chara\vol\vol2_v01.fv2</code></pre>
+                            These fovas have 2 referenced models in section 4 - can it be the count of fmdl files?
+                        </li>
+                    </ul>
+                </li>
+                <li>Byte 0x25 has 2 states:
+                    <ul>
+                        <li>00: almost every single fv2 file</li>
+                        <li>01: 33 files, including mgo hats</li>
+                    </ul>
+                </li>
+                <li>4 unknown bytes, never bothered to look into them.</li>
+            </ul>
+
+        <h5>Section 1</h5>
+        <p>
+            Section 1 contains links to files from section 4 and commands on how to use them.
+            This differs from file to file, sometimes section 1 is really small, sometimes 
+            it is really big. Usually it has a link to the main model, 0000 in our case.
+        </p> 
+        <p>
+            Address: 0x28-until the beginning of section 2.
+        </p>
+        <p>In the file sna0_face6_v00.fv2 section 1 is pretty small and has only 2 entries.
+        <ul>
+            <li>Entry 1: 0x28-0x30, 8 bytes, <code>0000 FFFF FFFF FFFF</code>. 
+                0000 is a link to the first file in section 4 (head model, 
+                sna0_face6_cov.fmdl, in the same fpk).
+            </li>
+           <li>Entry 1: 0x28-0x30, 8 bytes, <code>0100 FFFF 0000 0000</code>. 
+                0100 is a link to the second file in section 4 (sim file for bandana, 
+                sna0_bdn0_def.sim, in fpkd).
+            </li>
+        </ul>
+        </p>
+
+        <h5>Section 2</h5>
+        <p>
+            Section 2 also contains links to files from section 4 (2 bytes per link) 
+            and commands on how to use them (4 bytes per command).
+            This also differs from file to file, sometimes section 2 is empty, sometimes 
+            it is really big. It has links to models and textures. In our case it is empty.
+        </p> 
+        <p>
+            Address: referenced in index section.
+        </p>
+        
+        <h5>Section 3</h5>
+        <p>
+            Section 3 is always empty, as YouRePrettyGood claims. I haven't seen section 3 
+            with elements either.
+        </p> 
+        <p>
+            Address: referenced in index section.
+        </p>
+
+        <h5>Section 4</h5>
+        <p>
+            Section 4 contains reversed hashed filenames, 8 bytes long. They are hashed using CityHash64.
+        </p>
+        <p>
+            Address: referenced in index section.
+        </p>
+            How to read hashes:
+            <ul>
+                <li>Split hash by 2 symbols: 42 5A EA A1 88 A5 A2 84;</li>
+                <li>Reverse their order: 84 A2 A5 88 A1 EA 5A 42;</li>
+                <li>Drop first 2 bytes (file extension): A5 88 A1 EA 5A 42.</li>
+            </ul>
+            Now you can use that hash to find the corresponding file like this:
+            <pre><code>unknown@vault MINGW64 /j/mgs/mgsv_lua_dump/tpp/master (master)
+$ grep -ri --include=*\.txt --include=*\.inf a588a1ea5a42
+inf/0/00/fpks/output.txt:tpp/chara/sna/Scenes/sna0_face6_cov    a588a1ea5a42
+inf/chunk0/fpks/output.txt:tpp/chara/sna/Scenes/sna0_face6_cov  a588a1ea5a42
+</code></pre>
+            I am using grep bundled with <a href='https://github.com/git-for-windows/git/releases/'>git for windows</a>.
+            Filehashes for all files in .fpk(d) and .dat files can be found at 
+            <a href="https://github.com/unknown321/mgsv_lua_dump/tree/master/tpp/master/inf">this repository</a>.
+            You can use github search as well, but sometimes it refuses to find text, 
+            so I advise you to clone the repo and search for hashes locally. If you cannot find 
+            the file, remove a couple of symbols from the beginning, i.e. 8a1ea5a42.
+        </p> 
+        <p>
+            Getting hashes for new files is also possible by using 
+            <a href="https://github.com/unknown321/mgsv_path_hasher">mgsv_path_hasher</a>.
+        </p>
+        <p>
+            Extensions are constant and you can easily recognize them:
+            <table>
+                <tr>
+                    <td>Hash</td><td>Type</td>
+                </tr>
+                <tr>
+                    <td>A2 84</td><td>fmdl</td>
+                </tr>
+                <tr>
+                    <td>91 34</td><td>sim</td>
+                </tr>
+               <tr>
+                    <td>6B 15 / 69 15 / 68 15</td><td>ftex (usually texture/mask/another mask)</td>
+                </tr>
+            </table>
+            Example image, section 4 full of textures: 
+        </p>
+        <img src='images/fv2_4.png'>
+
+        <h3>Commands</h3>
+        <p>
+            As stated before, FV2 files have commands that do various actions with linked files.
+            Known commands:
+            <table>
+                <tr>
+                    <td>Hash</td><td>Command</td><td>Count</td>
+                </tr>
+                <tr><td>53A31F5E</td><td>TENTION_CHEST</td><td>6</td></tr>
+                <tr><td>DFA48733</td><td>Base_Tex_LIN</td><td>12</td></tr>
+                <tr><td>AE22FDC3</td><td>TENSION_LUARM</td><td>30</td></tr>
+                <tr><td>41CAD26B</td><td>TENSION_RUARM</td><td>30</td></tr>
+                <tr><td>2F8DA4F0</td><td>TensionSubNormalMap_Tex_NRM</td><td>74</td></tr>
+                <tr><td>E507F094</td><td>TENSION_EYER</td><td>76</td></tr>
+                <tr><td>7CFDFE5E</td><td>TENSION_EYEL</td><td>76</td></tr>
+                <tr><td>9B283BFD</td><td>TENSION_FHEAD</td><td>76</td></tr>
+                <tr><td>AFD90D35</td><td>TENSION_CHEEKR</td><td>76</td></tr>
+                <tr><td>95FA7041</td><td>TENSION_CHEEKL</td><td>76</td></tr>
+                <tr><td>C6D67A80</td><td>TENSION_NECK</td><td>82</td></tr>
+                <tr><td>0AF744DD</td><td>Translucent_Tex_LIN</td><td>107</td></tr>
+                <tr><td>7E6BAFC4</td><td>TENSION_RTHIGH</td><td>137</td></tr>
+                <tr><td>777C4B49</td><td>TENSION_LTHIGH</td><td>137</td></tr>
+                <tr><td>06DBACB8</td><td>TENTION_LUARM</td><td>152</td></tr>
+                <tr><td>2F780EBE</td><td>TENTION_RUARM</td><td>152</td></tr>
+                <tr><td>A619A499</td><td>MatParamIndex_3</td><td>153</td></tr>
+                <tr><td>8E402E96</td><td>VShift_UV</td><td>176</td></tr>
+                <tr><td>EB160E5E</td><td>UShift_UV</td><td>176</td></tr>
+                <tr><td>CBB6CB7B</td><td>Dirty_Tex_LIN</td><td>292</td></tr>
+                <tr><td>0E2F5F06</td><td>MatParamIndex_2</td><td>341</td></tr>
+                <tr><td>87F69B21</td><td>Base_Tex2_SRGB</td><td>570</td></tr>
+                <tr><td>77206689</td><td>MatParamIndex_1</td><td>593</td></tr>
+                <tr><td>E01A5105</td><td>NormalMap_Tex_NRM</td><td>678</td></tr>
+                <tr><td>FF8784E3</td><td>MatParamIndex_0</td><td>782</td></tr>
+                <tr><td>8558FD2D</td><td>MatParamMap_Tex_LIN</td><td>1450</td></tr>
+                <tr><td>728B1AF9</td><td>LayerMask_Tex_LIN</td><td>1972</td></tr>
+                <tr><td>E6DB2698</td><td>Layer_Tex_SRGB</td><td>2124</td></tr>
+                <tr><td>0EB1986B</td><td>SpecularMap_Tex_LIN</td><td>2342</td></tr>
+                <tr><td>611BE87B</td><td>Base_Tex_SRGB</td><td>3919</td></tr>
+                <tr><td>0E642277</td><td>mostly used in MGO in hat fv2</td><td>19</td></tr>
+                <tr><td>EB77FEBF</td><td>used for combining 2 models together</td><td>31</td></tr>
+            </table>
+
+            Table of targets:
+            <table>
+                <tr>
+                    <td>Hash</td><td>Target</td><td>Count</td>
+                </tr>
+                <tr><td>4896BADF</td><td>MESH_eqpt2_DCL_OL0_IV</td><td>4</td></tr>
+                <tr><td>8EECFA93</td><td>MESH_bagU</td><td>4</td></tr>
+                <tr><td>DEA095E4</td><td>MESH_greF_LOD6</td><td>4</td></tr>
+                <tr><td>6E9ECA61</td><td>MESH_bag_B1_IV</td><td>4</td></tr>
+                <tr><td>F82C8371</td><td>head_hair</td><td>6</td></tr>
+                <tr><td>6849DFDF</td><td>ANIME_EYE</td><td>6</td></tr>
+                <tr><td>01D16FA9</td><td>fabric_mid_glossy</td><td>6</td></tr>
+                <tr><td>8B9295EF</td><td>body_fox</td><td>6</td></tr>
+                <tr><td>B9DB0121</td><td>body2</td><td>6</td></tr>
+                <tr><td>903B0217</td><td>skin_white_male2</td><td>6</td></tr>
+                <tr><td>D0DF8575</td><td>body3</td><td>6</td></tr>
+                <tr><td>D16E43F2</td><td>mout_main0_def</td><td>6</td></tr>
+                <tr><td>D1C2B74E</td><td>face_patch</td><td>6</td></tr>
+                <tr><td>DD6D7773</td><td>body1</td><td>6</td></tr>
+                <tr><td>CF07DACD</td><td>ope_glove_L_mat</td><td>8</td></tr>
+                <tr><td>ADCE4DDC</td><td>ope_glove_R_mat</td><td>8</td></tr>
+                <tr><td>8CFD744E</td><td>MESH_arm</td><td>9</td></tr>
+                <tr><td>E5FFD741</td><td>MESH_rubberglobes_5fingers_IV</td><td>13</td></tr>
+                <tr><td>96715738</td><td>dds0_body0_mat</td><td>13</td></tr>
+                <tr><td>93F8BC81</td><td>dds0_eqip0_mat</td><td>17</td></tr>
+                <tr><td>989F16BF</td><td>(ALWAYS FIRST SKL HASH)</td><td>54</td></tr>
+                <tr><td>0185E8A9</td><td>MESH_head</td><td>97</td></tr>
+                <tr><td>4E7638DE</td><td>hair</td><td>101</td></tr>
+                <tr><td>1BDD0582</td><td>skin</td><td>236</td></tr>
+                <tr><td>06C7BF63</td><td>body</td><td>380</td></tr>
+                <tr><td>49A05886</td><td>eye</td><td>548</td></tr>
+            </table>
+        </p>
+        <p>
+            These are commands that I've found in fv2 by using tables provided by YouRePrettyGood.
+            Division between targets and command is based on command's name. Count numbers may be 
+            slightly off (±5) due to mods and me being unaccurate with files.
+        </p>
+        <p>
+            Sometimes commands have really weird syntax. Let's take a look at 
+            <code>chunk0\plparts_hospital_fpk\Assets\tpp\fova\chara\sna\sna1_v04.fv2</code>.
+            This is fova responsible for adding dirt and cuts to snake during prologue.
+        </p>
+            <img src='images/cosmetics_4.jpg'>
+            <img src='images/fv2_6.png'>
+        <p>
+            As we can see, commands (1 and 2) are repeating without any file 
+            links. Links are put separately from commands (3) in some sort of array.
+            The amount of FFFF-padding is also huge. I have a feeling that this 
+            is related to <a href="https://developer.valvesoftware.com/wiki/MDL#Skin_replacement_tables">this</a>, 
+            but I am not interested in textures that much.<br>
+            Side note: this fova is using 7 textures:
+            <table>
+                <tr><td>2898587abb9ab.ftex</td><td>face</td></tr>
+                <tr><td>10a9f5617b387.ftex</td><td>facemask</td></tr>
+                <tr><td>25b1e1d8ac451.ftex</td><td>bandage</td></tr>
+                <tr><td>19db40a9af383.ftex</td><td>body</td></tr>
+                <tr><td>2be12abeb1323.ftex</td><td>bodymask</td></tr>
+                <tr><td>25bd197efbf1e.ftex</td><td>pants</td></tr>
+                <tr><td>3fc288b2d1607.ftex</td><td>pants mask</td></tr>
+            </table>
+            Only one texture for bandage, why mask is not needed? This fova also 
+            has a command to toggle meshes on and off, should look into it (for 
+            possible removal of snake's eyepatch for example) .
+        </p>
+
+        <h3>Important commands</h3>
+        <p>
+            After weeks of digging, I've found 2 commands which apparently allow you to attach 
+            models to other models.
+            <table>
+                <tr>
+                    <td>Hash</td><td>Command</td><td>Count</td>
+                </tr>
+                <tr><td>0E642277</td><td>mostly used in MGO in hat fv2</td><td>19</td></tr>
+                <tr><td>EB77FEBF</td><td>used for combining 2 models together</td><td>31</td></tr>
+            </table>
+        </p>
+        <p>
+            First hash (0E642277) is used in both MGO and TPP. It's present in mgo hat fv2, using it in TPP 
+            fovas does nothing, so it may be MGO-only. Still, it should be noted.
+        </p>
+        <p>
+            Second hash (EB77FEBF) is what I was looking for. It takes 2 arguments:
+            <ul>
+                <li>Skeleton hash, 4 bytes, usually it is 989F16BF (ALWAYS FIRST SKL HASH). 
+                It can be replaced with FFFFFFFF with no visible issues. I have tried 
+                to replace it with other target hashes (ie SKL_004_HEAD), but without 
+                success - attached model moves to your feet. Probably it happens 
+                because there is no such SKL hash in head's model.</li>
+                <li>Link to the fmdl file, 2 bytes.</li>
+            </ul>
+            It should be noted that this command puts referenced model in the 
+            center of base model.
+        </p>
+            Example: <img src='images/fv2_5.png'>
+        <p>
+            If you don't provide the command, leaving just a link to the fmdl file, it will be rendered 
+            at your feet. Link has to be put in some special order, moving it by 2 bytes left or right 
+            makes it disappear. Command has to be present in some special position as well, otherwise 
+            nothing will render (or the game will crash).
+
+        </p>
+        <p>
+            In the example above you can see a link to head model (0000) without 
+            any commands and yet head is placed in the right place. However, replacing 
+            the head model with another non-head model (I used mgo hats) moves the new 'head' 
+            to your feet. 
+        </p>
+            <img src='images/fv2_12.png'>
+        <p>
+            I have 2 explanations for that:
+            <ul>
+                <li>
+                    Game recognizes that head model and body model have 
+                    matching connection points and attaches them one to another;
+                </li>
+                <li>
+                    There are special flags in the model i.e. head/body; game 
+                    takes the 'head' and attaches it to the 'body'. No flag - 
+                    render it at the feet level.
+                </li>
+            </ul>
+        </p>
+        <p>
+            Model rendering also depends on byte 0x24 and 0x25 in index section. 
+            In order to render both models both bytes have to have a value of 01. 
+            I was unable to find a relation between the amount of models and the 
+            fact of render. 
+            <table>
+                <tr>
+                    <td>Byte</td><td>Value</td><td>Note</td>
+                </tr>
+                <tr>
+                    <td>0x24</td><td>00</td><td>No models rendered</td>
+                </tr>
+                <tr>
+                    <td>0x24</td><td>01</td><td>Both models rendered</td>
+                </tr>
+                <tr>
+                    <td>0x24</td><td>02</td><td>Both models rendered</td>
+                </tr>
+                <tr>
+                    <td>0x25</td><td>00</td><td>New model moves to feet</td>
+                </tr>
+                <tr>
+                    <td>0x25</td><td>01</td><td>Both models rendered</td>
+                </tr>
+            </table>
+        </p>
+
+        <p>
+            There are only 18 fv2 files with 2 models which can be used for further research on 
+            that command. My mods are based on cm_unq_v003_eye1.fv2 since it's the cleanest one,
+            other fovas such as pfs ones have a lot of stuff inside.
+            <pre><code>master\chunk0\cm_unq_v000_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v000_eye1.fv2
+master\chunk0\cm_unq_v003_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v003_eye1.fv2
+master\chunk0\cm_unq_v006_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v006_eye0.fv2
+master\chunk0\cm_unq_v007_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v007_eye0.fv2
+master\chunk0\plfova_sna0_arm1_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm1_v00.fv2
+master\chunk0\plfova_sna0_arm2_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm2_v00.fv2
+master\chunk1\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main0_v00.fv2
+master\chunk1\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main0_v02.fv2
+master\chunk1\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main1_v00.fv2
+master\chunk1\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main1_v04.fv2
+master\chunk1\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main0_v02.fv2
+master\chunk1\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main1_v02.fv2
+master\chunk1\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_a.fv2
+master\chunk1\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_b.fv2
+master\chunk1\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_c.fv2
+master\chunk1\sva0_main0_v00_fpk\Assets\tpp\fova\chara\svs\sva0_v00_a.fv2
+master\chunk2\f30011_fpk\Assets\tpp\fova\chara\vol\vol2_v01.fv2
+master\chunk4\s10140_d03_fpk\Assets\tpp\fova\chara\dds\ddr0_main0_v00.fv2</code></pre>
+        There are no fv2 with 3 and more models. My attempts in adding a third one 
+        were futile, game either crashed or ignored new fmdls. Feel free to try 
+        yourself.
+        </p>
+
+        <h3>Exploring the fv2</h3>
+        <p>
+            Copy hex values of fv2 file to your favorite text editor, 
+            split file by sections, then use the list of hashes to replace 
+            all known hashes with text. It will make file much clearer:
+            <pre><code>464F563277696E0150005000000003005000000000000000000000000000000000000000010100000000FFFFFFFFFFFF0100FFFFEB77FEBF989F16BF0200FFFFFFFFFFFFFFFFFFFF00000000000000005F7E60E40985A2849CDC9C9A4501913475F64D17D875A384</code></pre>
+            becomes 
+            <pre><code>header
+464F563277696E01
+
+index
+    5000 - section 2 offset
+    5000 - section 4 offset
+    0000 - section 2 entries
+    0300 - section 4 entries
+    5000 - section 3 offset
+    0000 - section 3 entries
+unknown stuff
+    0000 0000 0000 0000 0000 0000 0000 0000 
+byte 24-25
+    0101 
+unknown stuff
+    0000
+
+section 1
+    0000FFFF - link to head .fmdl
+    FFFFFFFF - padding?
+    0100FFFF - link to .sim
+    Attach_fmdl - command
+    (ALWAYS FIRST SKL HASH) - skl target
+    0200FFFF - link to new .fmdl
+    FFFFFFFF - padding?
+    FFFFFFFF - padding?
+    00000000 - padding?
+    00000000 - padding?
+
+section 4
+    5F7E60E40985A284 - head .fmdl
+    9CDC9C9A45019134 - .sim
+    75F64D17D875A384 - new .fmdl</code></pre>
+        
+        You can also use <a href="http://forum.xentax.com/viewtopic.php?p=121318#p121318">
+        script for Hex Workshop by YouRePrettyGood</a>, but it is 
+        really slow on some fv2. It is useful for big files, but text editor is 
+        faster.
+        </p>
+
+        <h3>Applying the fova</h3>
+        <p>
+            After making modifications you need to apply the fova to your model. 
+            However there are problems. <code>Player.ApplyFormVariationWithFile</code> 
+            doesn't work with head fovas at all, but only with body fovas. There 
+            might be an additional parameter to that function to choose the region, 
+            but I was unable to find one. It means that for head you will have to 
+            replace existing head fovas. Fortunately there are only 16 of them 
+            (not including battledress headcovers, mgs1 snake etc.)
+            <table>
+                <tr>
+                    <td>Filename</td><td>Note</td>
+                </tr>
+                <tr><td>plfova_plf0_msk0_v00.fpk</td><td>Female DD soldier (+chicken mask)</td></tr>
+                <tr><td>plfova_plf0_msk1_v00.fpk</td><td>Female DD soldier (+chick mask)</td></tr>
+                <tr><td>plfova_sna0_face0_v00.fpk</td><td>Small horn</td></tr>
+                <tr><td>plfova_sna0_face1_v00.fpk</td><td>Medium horn</td></tr>
+                <tr><td>plfova_sna0_face2_v00.fpk</td><td>Large horn</td></tr>
+                <tr><td>plfova_sna0_face4_v00.fpk</td><td>Small horn + bandana</td></tr>
+                <tr><td>plfova_sna0_face5_v00.fpk</td><td>Medium horn + bandana</td></tr>
+                <tr><td>plfova_sna0_face6_v00.fpk</td><td>Large horn + bandana</td></tr>
+                <tr><td>plfova_sna0_msk0_v00.fpk</td><td>Male DD soldier/Snake (+chicken mask)</td></tr>
+                <tr><td>plfova_sna0_msk1_v00.fpk</td><td>Male DD soldier/Snake (+chick mask)</td></tr>
+                <tr><td>plfova_sna7_msk0_v00.fpk</td><td>Parasite suit (+chicken mask)</td></tr>
+                <tr><td>plfova_sna7_msk1_v00.fpk</td><td>Parasite suit (+chick mask)</td></tr>
+                <tr><td>Gold/Silver heads below(?)</td><td>----------</td></tr>
+                <tr><td>plfova_sna9_face0_v00.fpk</td><td>Small horn snake</td></tr>
+                <tr><td>plfova_sna9_face1_v00.fpk</td><td>Snake (bandana+mullet)</td></tr>
+                <tr><td>plfova_sna9_face2_v00.fpk</td><td>Snake (bandana+mullet)</td></tr>
+                <tr><td>plfova_sna9_face3_v00.fpk</td><td>Snake (bandana+mullet)</td></tr>
+            </table>
+            Fovas with (+chick/chicken mask) have masks models in them. By changing 
+            chicken fova, you will change your regular appearance (even when you 
+            are not in chicken mode), chick fova is for chick hat mode only.
+        </p>
+        <p>
+            Let's use plfova_sna0_face4_v00 as an example.
+            Original:
+            <pre><code>464F563277696E0138004000000002004000000000000000000000000000000000000000010000000000FFFFFFFFFFFF0100FFFF0000000000000000000000005F7E60E40985A2849CDC9C9A45019134</code></pre>
+            Modded:<pre><code>464F563277696E0150005000000003005000000000000000000000000000000000000000010100000000FFFFFFFFFFFF0100FFFFEB77FEBF989F16BF0200FFFFFFFFFFFFFFFFFFFF00000000000000005F7E60E40985A2849CDC9C9A450191345227B06BAAA9A384</code></pre>
+        </p>
+            Diff:
+            <img src='images/fv2_8.png'>
+        <p>
+            <u>Index</u>: changed addresses for section 2 and section 4 since we've added 
+            a new command (3800 4000 -> 5000 5000). Since there is a new file 
+            hash, amount of section 4 entries has to be changed as well (0200 -> 0300). 
+            Bytes 0x24-0x25 must be 0101 instead of 0100 to render models.<br>
+            <u>Section 1</u>: command EB77FEBF to attach model, target 989F16BF, link to 
+            the file #0200 and some FFFF padding.<br>
+            <u>Section 4</u>: new file 5227B06BAAA9A384 - <code>tpp\chara\dds\Scenes\dds3_eqhd3_cov.fmdl</code>.
+            This a DD beret taken from <code>chunk2\s10050_d02_fpk</code>. You will need to 
+            add that file to plfova_sna0_face4_v00.fpk or <code>tpp\pack\resident\resident00.fpk</code>.
+            I suggest using resident00.fpk to avoid duplicating models saving 
+            disk size.
+        </p>
+            Result: <img src='images/fv2_7.jpg'>
+        <p>
+            There is some clipping, but this is definitely working. There are 
+            problems with distance between added cosmetic and head model. Distance 
+            changes because of player's base stance. Male and female soldiers have 
+            different poses. I think it was counted for MGO cosmetics (hence male 
+            and female hat versions), but there are no 'legal' cosmetics 
+            for TPP. Poses also change for different outfits (same head fova):
+        </p>
+            <img src='images/fv2_11.jpg'>
+        <p>
+            Another problem: attached hats are not counted as player's model. 
+            They are not disappearing in first person, obstructing view. It it unavoidable 
+            for soldier-wide cosmetics (see fmdl fixes below).
+        </p>    
+            <img src='images/fv2_13.jpg'>
+        
+        <h3>Soldier-wide cosmetics' fixes</h3>
+        <p>
+            As stated above, you can change appearance of all your soldiers by 
+            modifying fova with chicken hat (plfova_plf0_msk0_v00.fpk, plfova_sna0_msk0_v00.fpk).
+            But only 2 models work with it without having to enable chicken mode:
+            <ul>
+                <li>ewr3_eqhd0_cov.fmdl - hideo's glasses</li>
+                <li>ewr0_eqhd0_cov.fmdl - ocelot's glasses</li>
+            </ul>
+            Other models don't appear unless you turn on chicken mode. There is a fix, which 
+            requires a little bit of hex editing. Simply replace 
+            <pre><code>MESH_ROOT (ALWAYS FIRST MESH HASH) 35D648F974580000</code></pre>
+            with 
+            <pre><code>MESH_ROOT_V2 782A0D778E800000</code></pre> in fmdl.
+            That will make model to render no matter what.
+            <b><u>Game will crash if you change player character (i.e. snake-ddsoldier-snake).</u></b>
+        </p>
+
+        <p>
+            <code>MESH_ROOT_V2</code> was found by comparing glasses models using 
+            <a href=" https://github.com/Jayveerk/FMDL/blob/master/MGSV%20FMDL%20PC.ms">
+            3dsmax fmdl script by Jayveerk</a>. I had to rewrite it in Python <b>2</b> to avoid 
+            launching 3dsmax every time I need to look at model's structure - <a href='mods/fv2/fmdl_parser_v2.py'>link</a>.
+            I've also expanded fmdl hashes list a little with hashes from 
+            skullface's hat (GZ and TPP versions, 62e7efe72cb98bb3d8b88977dcc9414f.fmdl - 
+            wsp0_eqhd0_def.fmdl) and both glasses. <a href="mods/fv2/fmdl_name_hashes.txt">New hashes list</a>.
+        </p>
+
+        <h4>Getting more hashes / exploring fmdl</h4>
+        <p>
+            Python script above was made to print fmdl sections in human form.
+            Most sections have descriptions from the author in the script.
+            Notable sections:
+            <ul>
+                <li>1.21 - reversed texture hashes</li>
+                <li>1.22 - command hashes, same as in fv2.</li>
+            </ul>
+            If you want to get more command hashes and their names, you can compare 
+            similar files from GZ and TPP. GZ fmdls have names at the end of the file, 
+            while TPP has them in section 1.22.
+        </p>
+        <img src="images/fv2_14.png">
+
+        <p>
+            You can also move fmdls without 3dsmax with python script:
+            <pre><code>move_fmdl = True
+print_sections = True
+offset = [0, 0, 0.1]
+parse_fmdl(r'C:\1.fmdl', print_sections, move_fmdl, offset)</code></pre>
+will make: C:\1_moved.fmdl and C:\1_sections.txt. There are some offsets at the beginning of the script.
+        </p>
+
+        <p>Script can apply mesh fixes as well: <code>fmdl_mesh_fix(r'C:\1.fmdl')</code> will overwrite the file with fixed mesh.</p>
+
+        <h3>MGO hats</h3>
+        <p>
+            MGO hats can be added using the same way. Problems:
+        </p>
+            <img src='images/fv2_9.png'>
+            <img src='images/fv2_10.jpg'>
+        <p>
+            In the first image you can clearly see the offset between cap and 
+            glasses+beret combo (beret is the violet ugly thing).
+            Second image shows that offset ingame. It can be fixed by providing frdv file and 
+            adding it to your fv2 file. 
+        </p>
+
+        <h3>How to mod MGO hats</h3>
+        <p>
+            Find a model you want to use (let's say hat0_main0_def.fmdl). Parse it with fmdl script to find out shift for section 1.22 and 1.21 (<code>print_sections=True</code>). Open fmdl in hex editor, replace   
+            <code>35D648F974580000</code> with <code>782A0D778E800000</code> (section 1.22) to make it visible.
+            <hr>
+            Copy hashes from section 1.21 and reverse them (order is important):
+            <pre><code>156b3dcb9e506351
+156855d8625e430c
+156884483e1c10b0
+156938337d71ab4b
+1569886cb15d7938</code></pre>
+        Unpack texture0.dat using MGSV_QAR_TOOL. Open texture0.inf and search for last 8 characters from hashes (i.e. 625e430c). Copy files you found 
+        (33dcb9e506351.2.ftexs and 33dcb9e506351.3.ftexs) to any folder you like. Find related pftxs - hat_m00.pftxs. Unpack it using gsz_tool. Gather all textures in one folder. Rename then in the same order as they were in fmdl:<pre><code>156b3dcb9e506351 - tex1.ftex
+156855d8625e430c - tex2.ftex
+156884483e1c10b0 - tex3.ftex
+156938337d71ab4b - tex4.ftex
+1569886cb15d7938 - tex5.ftex</code></pre>Rename ftexs in the same way (tex1.1.ftexs).<hr>
+        Unpack <code>0\00\Assets\tpp\pack\resident\resident00.pftxs</code> with gsz_tool. Go to <code>Assets\tpp\hats\textures\mgo\allclass\hat0</code> (create missing folders). Put your textures there.
+        Create test.dat.xml:
+        <pre><code>&lt?xml version="1.0"?&gt
+&ltArchiveFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="QarFile" Name="test.dat" Flags="3150304"&gt
+  &ltEntries&gt
+    &ltEntry FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex1.ftex" Compressed="false" /&gt
+    &ltEntry FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex2.ftex" Compressed="false" /&gt
+    &ltEntry FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex3.ftex" Compressed="false" /&gt
+    &ltEntry FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex4.ftex" Compressed="false" /&gt
+  &lt/Entries&gt
+&lt/ArchiveFile&gt</code></pre>
+        Put your new renamed textures into test_dat directory with same paths.
+        Pack it into .dat file with gsz_tool. Add <pre><code>/Assets/tpp/hats/textures/mgo/allclass/hat0/tex1
+/Assets/tpp/hats/textures/mgo/allclass/hat0/tex2
+/Assets/tpp/hats/textures/mgo/allclass/hat0/tex3
+/Assets/tpp/hats/textures/mgo/allclass/hat0/tex4</code></pre>
+        to your dictionary.txt for MGSV_QAR_TOOL. Unpack test.dat, open 
+        test.inf. Get hashes out of it (don't forget to reverse them):
+        <pre><code>08 ff 7e cd b4 81 6a 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex1.ftex
+64 0e 7e ab 16 9e 6a 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex2.ftex
+cd 84 cc a6 d7 f2 6b 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex3.ftex
+d3 73 85 dc df 5b 6b 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex4.ftex
+70 dc d6 27 ec 93 69 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex5.ftex</code></pre>
+        Open hat0_main0_def.fmdl with your favorite hex editor. 
+        Go to the address of section 1.21 (provided by python script).
+        Replace hashes in the same order, one by one. Save fmdl.<hr>
+        Add textures to resident00.pftxs:<pre><code>&ltEntry&gt
+    &ltEntries xmlns="Pftxs"&gt
+        &ltEntryData FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex1.ftex" /&gt
+        &ltEntryData FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex1.1.ftexs" /&gt
+        &ltEntryData FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex1.2.ftexs" /&gt
+        &ltEntryData FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex1.3.ftexs" /&gt
+    &lt/Entries&gt
+&lt/Entry&gt</code></pre>
+    Pack resident.pftxs. Add your model to resident00.fpk using gsz_tool or MGSV_FPK_TOOL. Calculate hash for fmdl using method above for textures - this is important. 
+    Edit fv2 template, replace last 8 bytes (FFFFFFFFFFFFFFFF) with fmdl hash. Pack fv2. Launch the game. If the model is in the wrong position, move it using either python script, or manually in 3dsmax with <a href="http://forum.xentax.com/viewtopic.php?p=120622#p120622">vertex script</a> (<a href="http://forum.xentax.com/viewtopic.php?p=121065#p121065">how?</a>).
+        </p>
+
+        <h3>For the lazy</h3>
+        <p>
+            I've ported almost all MGO hats to TPP.<br>
+            <a href='http://imgur.com/a/5rVAE'>http://imgur.com/a/5rVAE</a> - previews.<br>
+            You can find models and textures here - <a href="https://mega.nz/#F!ZwR3iLIS!D95yuDdUUJt1Wm0TkfX97Q">mega</a>.
+            <br>How to use:
+            <ul>
+                <li>
+                    Select hats you want to use (see 'previews' directory for filenames). Hats have different offsets for Snake/Avatar, DD soldier and DD soldier (female).</li>
+                <li>
+                    If you selected MGO hats, you will need textures. Grab them from 'textures' directory, only for hats you want to use.</li>
+                <li>
+                    Unpack resident00.fpk (00.dat) with gzs/fpk tool, add fmdls saving the same structure: <code>/Assets/tpp/hats/__soldier_type__/__game_type__/(__hat_type__)/__filename.fmdl__</code>
+                    You'll need __hat_type__ only for mgo hats. Pack it back.</li>
+                <li>
+                    MGO textures: find resident00.pftxs (01.dat). Unpack with gzs_tool, add textures saving the same structure: <code>Assets/tpp/hats/textures/mgo/__hat_type__/__hat_name__/tex[0-9].([1-3].)ftex(s)</code>. Make xml entries for every file added (or just grab them from pftxs_entries.txt in models directory which is not available for all models because I forgot to save one file). Order is important: ftex->ftexs.1->ftexs.2 etc. Pack it back. You cannot have too many textures at once in one pftxs - game has a limit. <a href="http://i.imgur.com/xrL8oKw.jpg">What happens when you hit the limit.</a>
+                </li>
+                <li>
+                    Select fovas depending on what player type you chose:
+                    <ul>
+                        <li>plfova_plf0_msk0_v00 - female</li>
+                        <li>plfova_sna0_msk0_v00 - male/snake/avatar</li>
+                        <li>plfova_sna0_face(0-2)_v00 - snake/avatar without bandana</li>
+                        <li>plfova_sna0_face(4-6)_v00 - snake/avatar with bandana</li>
+                    </ul>
+                    These fpks can be found in 00.dat and chunk0.dat. Unpack them, grab the corresponding template from 'fv2' directory on mega. Open the template fv2 with hex editor, replace last 8 bytes (FFFFFFFFFFFFFFFF) with hat hash from 'player_fmdl_name_hashes.txt'. Replace original fv2 with edited template. Pack fpk.
+                </li>
+                <li>
+                    Add resident00.fpk, resident00.pftxs and plfova you chose to 00.dat. Pack .dat and launch the game. If it crashed, you did something wrong.
+                </li>
+            </ul>
+            FPK/PFTXS structure (truncated):
+            <img src='images/fv2_15.png'>
+            <hr>
+            You can use combinations of 2 fovas to have many cosmetics on snake (plfova_sna0_msk0_v00 + plfova_sna0_face). I also believe that you can have up to 4 cosmetics on dd soldiers (by editing hair, face deco and skin fovas for one particular soldier - see bioengie).
+            <hr>
+            Some hats have clipping with your model (especially full-head models). It happens because soldiers have different head shapes and you need to adjust model coordinates for every soldier. Can be solved by making a proper frdv file (or just move them with python script).
+            <hr>
+            Physics are missing for some models. You can enable them by adding .sim file to fv2. You can find .sim files in models/ddmale/sim directory.
+            <hr>
+            Three hats are broken - MGO dd beret, afro and ponytail. Maybe it has something to do with MESH_ROOT_V2, I was unable to make them look good. Use beret from tpp instead.
+        </p>
+
+        <h3>Pics:</h3>
+        <img src="http://i.imgur.com/muK2Y1T.jpg">
+        <img src="http://i.imgur.com/UFQALfv.jpg">
+        <img src="http://i.imgur.com/5kcB2KD.jpg">
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Metal Gear Solid V: The Phantom Pain technical information maintained by <a href="https://github.com/unknown321">unknown321</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

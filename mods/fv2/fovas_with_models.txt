@@ -1,0 +1,2030 @@
+master\0\00\fpks\plfova_sna0_face4_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face4_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '5f7e60e40985a284':tpp/chara/sna/Scenes/sna0_face4_cov.fmdl
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna9_face2_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '48cf0f98a984a184'
+
+master\chunk0\fpks\plfova_sna0_arm4_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm4_v00.fv2
+	'a65468a468f1e0cd':tpp/chara/sna/Scenes/sna0_arm4_cov.frdv, 'a65468a468f1a084':tpp/chara/sna/Scenes/sna0_arm4_cov.fmdl
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_arm0_v00.fv2
+	'1eea753000fce3cd', '1eea753000fca384'
+
+master\chunk0\fpks\plfova_sna0_face5_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face5_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, 'fcffd59aef2fa384'
+
+master\chunk0\fpks\plfova_sna9_face3_v00_fpk\Assets\tpp\fova\chara\sna\sna9_face3_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, 'ff8b48d2d4d2a184'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\chara\sna\sna0_main4_v01.fv2
+	'aca29c14014f6815', 'd6d9139c3e716a15', 'add34aae740f6915', 'b748a2a93ba6a384'
+	фова добавляет пыль на лицо??
+
+
+master\chunk0\fpks\plfova_sna0_face4_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face4_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '5f7e60e40985a284':tpp/chara/sna/Scenes/sna0_face4_cov.fmdl
+
+master\chunk3\Assets\tpp\fova\chara\sna\sna0_main4_v02.fv2
+	'240bd4be65616915', '2b794cd269c46915', '5bbdf19aab426915', 'b748a2a93ba6a384'
+
+master\chunk0\fpks\s10280_d12_fpk\Assets\tpp\fova\chara\sna\sna0_face3_v00.fv2
+	'866f778f6cd9a084'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna9_face1_v00.fv2
+	'dd8e6ccb9329a284'
+
+master\chunk0\fpks\plfova_sna7_msk0_v00_fpk\Assets\tpp\fova\item\msk\sna7_msk0_v00.fv2
+	'0cd535d8c59b9334', 'c88597a7b158a084'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_face5_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, 'fcffd59aef2fa384'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna9_face0_v00.fv2
+	'f4429b5e9974a284'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\chara\sna\sna0_main4_v02.fv2
+	'240bd4be65616915', '2b794cd269c46915', '5bbdf19aab426915', 'b748a2a93ba6a384'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_face2_v00.fv2
+	'38eb424c72bda384'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_arm2_v00.fv2
+	'd1b44ac92ffba284', 'd1b44ac92ffbe2cd', '79e3b113ef51a084'
+
+master\0\00\fpks\Assets\tpp\fova\chara\sna\sna0_face6_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '425aeaa188a5a284'
+
+master\0\00\fpks\Assets\tpp\fova\chara\sna\sna0_face4_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '5f7e60e40985a284':tpp/chara/sna/Scenes/sna0_face4_cov.fmdl
+
+master\chunk0\fpks\plfova_sna9_face0_v00_fpk\Assets\tpp\fova\chara\sna\sna9_face0_v00.fv2
+	'f4429b5e9974a284'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_arm1_v00.fv2
+	'6251d2c348a3a284', '6251d2c348a3e2cd', 'b1807322ae5ca084'
+
+master\chunk0\Assets\tpp\fova\item\msk\sna7_msk1_v00.fv2
+	'bec47f8ab3409034', '7d6798865df9a384'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_arm6_v00.fv2
+	'2c626a0241fee2cd', '2c626a0241fea284'
+
+master\chunk0\fpks\plfova_sna0_face6_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face6_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '425aeaa188a5a284'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_main5_arm_dmo_v00.fv2
+	'e01a50b6abe2a184'
+
+master\chunk0\Assets\tpp\fova\item\msk\sna0_msk1_v00.fv2
+	'bec47f8ab3409034', '1047b5b6a0fea284'
+
+master\chunk0\fpks\plfova_sna0_face0_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face0_v00.fv2
+	'2bec9c7ee5a3a284'
+
+master\chunk0\fpks\plfova_sna9_face2_v00_fpk\Assets\tpp\fova\chara\sna\sna9_face2_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '48cf0f98a984a184'
+
+master\chunk0\fpks\plfova_sna0_arm1_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm1_v00.fv2
+	'6251d2c348a3a284', '6251d2c348a3e2cd', 'b1807322ae5ca084'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_arm3_v00.fv2
+	'8175524c772ce1cd', '8175524c772ca184'
+
+master\0\00\fpks\plfova_sna0_face6_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face6_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '425aeaa188a5a284'
+
+master\0\00\fpks\plfova_sna0_msk0_v00_fpk\Assets\tpp\fova\item\msk\sna0_msk0_v00.fv2
+	'0cd535d8c59b9334', '87bb92d6bc6ea084'
+
+master\0\00\fpks\Assets\tpp\fova\item\msk\sna0_msk1_v00.fv2
+	'bec47f8ab3409034', '1047b5b6a0fea284'
+
+master\chunk0\fpks\plfova_sna0_arm6_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm6_v00.fv2
+	'2c626a0241fee2cd', '2c626a0241fea284'
+
+master\chunk0\fpks\plfova_sna0_face1_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face1_v00.fv2
+	'8766fd743c88a084'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_face1_v00.fv2
+	'8766fd743c88a084'
+
+master\chunk0\Assets\tpp\fova\item\msk\sna7_msk0_v00.fv2
+	'0cd535d8c59b9334', 'c88597a7b158a084'
+
+master\0\00\fpks\plfova_sna0_face5_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face5_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, 'fcffd59aef2fa384'
+
+master\0\00\Assets\tpp\pack\player\fova\plfova_sna0_face4_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face4_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '5f7e60e40985a284':tpp/chara/sna/Scenes/sna0_face4_cov.fmdl
+
+master\chunk0\fpks\plfova_sna0_arm0_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm0_v00.fv2
+	'1eea753000fce3cd', '1eea753000fca384'
+
+master\chunk0\fpks\plfova_sna0_face2_v00_fpk\Assets\tpp\fova\chara\sna\sna0_face2_v00.fv2
+	'38eb424c72bda384'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_face6_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '425aeaa188a5a284'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna9_face3_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, 'ff8b48d2d4d2a184'
+
+master\chunk0\fpks\plfova_sna0_msk1_v00_fpk\Assets\tpp\fova\item\msk\sna0_msk1_v00.fv2
+	'bec47f8ab3409034', '1047b5b6a0fea284'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_arm7_v00.fv2
+	'7b094568a3a6e1cd', '7b094568a3a6a184'
+
+master\chunk0\fpks\plfova_sna9_face1_v00_fpk\Assets\tpp\fova\chara\sna\sna9_face1_v00.fv2
+	'dd8e6ccb9329a284'
+
+master\0\00\fpks\plfova_sna0_msk1_v00_fpk\Assets\tpp\fova\item\msk\sna0_msk1_v00.fv2
+	'bec47f8ab3409034', '1047b5b6a0fea284'
+
+master\chunk0\fpks\plfova_sna0_msk0_v00_fpk\Assets\tpp\fova\item\msk\sna0_msk0_v00.fv2
+	'0cd535d8c59b9334', '87bb92d6bc6ea084'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_face4_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, '5f7e60e40985a284':tpp/chara/sna/Scenes/sna0_face4_cov.fmdl
+
+master\0\00\fpks\Assets\tpp\fova\chara\sna\sna0_face5_v00.fv2
+	'9cdc9c9a45019134':tpp/chara/sna/Fox_files/sna0_bdn0_def.sim, 'fcffd59aef2fa384'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_face0_v00.fv2
+	'2bec9c7ee5a3a284'
+
+master\chunk3\Assets\tpp\fova\chara\sna\sna0_main4_v01.fv2
+	'aca29c14014f6815', 'd6d9139c3e716a15', 'add34aae740f6915', 'b748a2a93ba6a384'
+
+master\chunk0\fpks\s10010_d01_fpk\Assets\tpp\fova\chara\sna\sna0_main5_arm_dmo_v00.fv2
+	'e01a50b6abe2a184'
+
+master\chunk0\fpks\plfova_sna0_arm2_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm2_v00.fv2
+	'd1b44ac92ffba284', 'd1b44ac92ffbe2cd', '79e3b113ef51a084'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_arm4_v00.fv2
+	'a65468a468f1e0cd':tpp/chara/sna/Scenes/sna0_arm4_cov.frdv, 'a65468a468f1a084':tpp/chara/sna/Scenes/sna0_arm4_cov.fmdl
+
+master\chunk0\fpks\plfova_sna7_msk1_v00_fpk\Assets\tpp\fova\item\msk\sna7_msk1_v00.fv2
+	'bec47f8ab3409034', '7d6798865df9a384'
+
+master\chunk0\fpks\plfova_sna0_arm3_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm3_v00.fv2
+	'8175524c772ce1cd', '8175524c772ca184'
+
+master\0\00\fpks\Assets\tpp\fova\item\msk\sna0_msk0_v00.fv2
+	'0cd535d8c59b9334', '87bb92d6bc6ea084'
+
+master\chunk0\Assets\tpp\fova\chara\sna\sna0_face3_v00.fv2
+	'866f778f6cd9a084'
+
+master\chunk0\Assets\tpp\fova\item\msk\sna0_msk0_v00.fv2
+	'0cd535d8c59b9334', '87bb92d6bc6ea084'
+
+master\chunk0\fpks\plfova_sna0_arm7_v00_fpk\Assets\tpp\fova\chara\sna\sna0_arm7_v00.fv2
+	'7b094568a3a6e1cd', '7b094568a3a6a184'
+
+
+
+
+
+master\chunk0\fpks\cm_m0_h0_v003_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\fpks\f30050_d1020_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_pfs0_head_z_eye0.fv2
+	'9f38d8ce0481a384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h1_v002_eye0.fv2
+	'fab448182816a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c103.fv2
+	'bf71ca13a7479134', '397753bc6dcfa384'
+
+master\chunk0\fpks\cm_m0_h1_v002_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c002.fv2
+	'2725d78dc195a284'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk1\Assets\tpp\fova\chara\pfs\pfa0_v00_b.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'b2061e66b47be3cd', 'b2061e66b47ba384', '7e8e342372eb8960', '7d87be5fc63fe0cd', '7d87be5fc63fa084'
+
+master\chunk0\fpks\cm_dds3_eqhd1_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd1_eye0.fv2
+	'f9fa0ca13595a284'
+
+master\chunk3\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hair_a0_v00.fv2
+	'c33cbeb780dca284'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c003.fv2
+	'54987b074965a084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c001.fv2
+	'fb3bcd1931b3a284'
+
+master\chunk3\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v013_eye0.fv2
+	'bce13735be77a284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd7_eye0.fv2
+	'3054b153c3b4a184'
+
+master\chunk2\fpks\s10070_d01_fpk\Assets\tpp\fova\chara\wss\wss4_main0_v02.fv2
+	'0afae07405b86b15', 'b098229a8103a184', '0416b16bd4b86b15', '271dfbcdc3e06915', '50835d76e6676b15', 'e66179e6a5616915', '5c2f173653386a15', '0c00ffff05658ab0', '49a0588687f69b21', '87f69b210b00ffff', '49b34ea949a05886', '1683d0cd6e08fb91', '0900ffffd63b28fc', '9b488198e6db2698', 'e6db26980800ffff', '0700ffff9b488198', '9b488198e6db2698', 'e6db26980600ffff', '0500ffff9b488198', '9b488198e6db2698', 'e6db26980400ffff', '0300ffff27108ffa', '27108ffae6db2698', 'e6db26980200ffff', '0100ffff27108ffa', '72e572f1e6db2698', 'e6db26980000ffff', '88a04fb572e572f1', '515ab480022e3bfb', 'e82eef8ee441eea3', '23eae0c607b77f97', '5a2c061f0a8a3b4c', 'c6d72ad52e68636d', '00000000bc010000', 'c902010100000000', '00000000a4010000', '6e02020001000000', '00000000a0010000', '0903010100000000', '000000009c010000', '0803010100000000', '0000000094010000', '0702020100000000', '0000000058010000', '0602050001000000', '0000000034010000', '0502030001000000', '000000001c010000', '0402020001000000', '0000000010010000', '0302030100000000', '0000000000010000', '0202040100000000', '00000000f0000000', '0102040100000000'
+
+master\chunk0\fpks\plfova_avm0_type4_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type4_v00.fv2
+	'134265480fdc9234', '2fe4314dd1aea084'
+
+master\chunk2\fpks\s10150_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h1_v001_eye0.fv2
+	'39e883414a14a184'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\0\00\Assets\tpp\pack\fova\chara\oce\oce0_main0_v00_fpk\Assets\tpp\fova\chara\oce\gog1_main0_def.fv2
+	'5beed204a5a0a284', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\Assets\tpp\fova\chara\oce\oce0_main0_v01.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk0\fpks\plfova_avm_hair_b0_v01_fpk\Assets\tpp\fova\chara\avm\avm_hair_b0_v01.fv2
+	'607a9b385a5aa384'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\0\00\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd7_eye0.fv2
+	'c08153c34ef6a184'
+
+master\chunk3\fpks\f30050_d090_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk0\fpks\cm_f0_h0_v002_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v002_eye0.fv2
+	'8767c04203bea184'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk3\fpks\f30050_d000_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk0\Assets\tpp\fova\item\msk\plf0_msk0_v00.fv2
+	'7394162025729334', 'a30bfbf9ae96a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h2_v001_eye0.fv2
+	'2e9b21cbf415a384'
+
+
+
+
+master\chunk0\fpks\plfova_avm_hair_a0_v00_fpk\Assets\tpp\fova\chara\avm\avm_hair_a0_v00.fv2
+	'c33cbeb780dca284'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk2\fpks\s10150_d03_fpk\Assets\tpp\fova\chara\wss\wss4_main0_v02.fv2
+	'0afae07405b86b15', 'b098229a8103a184', '0416b16bd4b86b15', '271dfbcdc3e06915', '50835d76e6676b15', 'e66179e6a5616915', '5c2f173653386a15', '0c00ffff05658ab0', '49a0588687f69b21', '87f69b210b00ffff', '49b34ea949a05886', '1683d0cd6e08fb91', '0900ffffd63b28fc', '9b488198e6db2698', 'e6db26980800ffff', '0700ffff9b488198', '9b488198e6db2698', 'e6db26980600ffff', '0500ffff9b488198', '9b488198e6db2698', 'e6db26980400ffff', '0300ffff27108ffa', '27108ffae6db2698', 'e6db26980200ffff', '0100ffff27108ffa', '72e572f1e6db2698', 'e6db26980000ffff', '88a04fb572e572f1', '515ab480022e3bfb', 'e82eef8ee441eea3', '23eae0c607b77f97', '5a2c061f0a8a3b4c', 'c6d72ad52e68636d', '00000000bc010000', 'c902010100000000', '00000000a4010000', '6e02020001000000', '00000000a0010000', '0903010100000000', '000000009c010000', '0803010100000000', '0000000094010000', '0702020100000000', '0000000058010000', '0602050001000000', '0000000034010000', '0502030001000000', '000000001c010000', '0402020001000000', '0000000010010000', '0302030100000000', '0000000000010000', '0202040100000000', '00000000f0000000', '0102040100000000'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main0_v00.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '98e51c3e4f84a084', '333de4664e086a15', '354060c40fc46b15', 'ff76104cce4b6815', 'f849b017322d6b15'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type1_v00.fv2
+	'134265480fdc9234', '04569b0c04d7a084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk1\fpks\sva0_main0_v00_fpk\Assets\tpp\fova\chara\svs\sva0_v00_a.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8a88d1b3a1fbe1cd', '8a88d1b3a1fba184', '21b5d6a671f7e2cd', '21b5d6a671f7a284'
+
+master\chunk1\fpks\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main1_v01.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '196b8a0b5c8e6915', '756a9dba01216b15', '5cae128687e16b15', 'c51c7485fa3b6b15', '0d274051b3c96815', '16c845bf813a6915', 'ffffffffffffffff', 'ffffffff1200ffff', '000000001100ffff', '0000000087f69b21', 'ffffffff49a05886', '000000001000ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b210e000f00', '49a05886611be87b', 'ffffffff49a05886', '000000000d00ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000c00ffff', '0000000087f69b21', 'ffffffff49a05886', '0eb1986b0b000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0a000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b09000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b08000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b06000700', '1bdd0582611be87b', '8cfe321d1bdd0582', 'ede7b0557a062a11', '02000100ffffffff', '611be87b0eb1986b', '06c7bf6306c7bf63', '00000100ffffffff', '611be87b0eb1986b', '06c7bf6306c7bf63', '6e16fa9d00000000', '18712a6b092cc5d6', '092cc5d6c60caef3', '6e16fa9d00000000', '000000006132c4d9', '6132c4d918712a6b', '0000000034020000', 'cd02010000000100', '00000000bc010000', '6e02050002000000', '0000000044010000', '6402050002000000', '0000000038010000', '0902030100000000', '0000000008010000', '0302020002000000', '00000000d8000000', '0202040300000000'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk0\fpks\cm_hair_c004_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk0\fpks\cm_m0_h1_v004_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk1\fpks\svs0_uniq0_v09_fpk\Assets\tpp\fova\chara\svs\svs0_unq_v072.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '6b0e4462fe1c6a15', '00e6eaf907186a15', '7593ba21c2a76915', 'a9a435d975e6a184', 'f997af7d62926a15'
+
+master\chunk0\fpks\cm_hair_c101_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c101.fv2
+	'6f42840cd1d0a284'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hone_v02.fv2
+	'aa635b4bdbd0a084'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type3_v00.fv2
+	'134265480fdc9234', '3200e47dd897a384'
+
+master\chunk0\fpks\plfova_plf0_msk1_v00_fpk\Assets\tpp\fova\item\msk\plf0_msk1_v00.fv2
+	'd260ef36e2759034', 'b3d50da335f4a384'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk3\fpks\f30050_d000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr1_main0_v01.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8db2b02b65046915', '22335f7d28c36b15', '6fc0a8b280e16915', 'f849b017322d6b15'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\chara\dds\ddr0_main0_v00.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '98e51c3e4f84a084', '333de4664e086a15', '354060c40fc46b15', 'ff76104cce4b6815', 'f849b017322d6b15'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c002.fv2
+	'2725d78dc195a284'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk3\fpks\f30050_d011_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v012_eye1.fv2
+	'8907162acbc8a284'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk3\fpks\f30050_d090_fpk\Assets\tpp\fova\chara\qui\qui0_main_v05.fv2
+	'7815b2f95865e0cd', '7815b2f95865a084', 'ab31419dc4386915', '4ced74af179b6915'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h2_v002_eye0.fv2
+	'e3ea5ee49686a384'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk1\fpks\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_c.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'b2061e66b47be3cd', 'b2061e66b47ba384', '37bfc93af5788860', '7d87be5fc63fe0cd', '7d87be5fc63fa084'
+
+master\chunk3\fpks\f30050_d021_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v018_eye0.fv2
+	'8a81d267b103a084'
+
+master\chunk0\fpks\cm_m0_h0_v001_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk2\fpks\s10260_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk1\fpks\pfs0_uniq0_v04_fpk\Assets\tpp\fova\chara\pfs\pfs0_unq_v280.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '78dd07a2019be2cd', '78dd07a2019ba284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v005_eye0.fv2
+	'794fcfdfd240a284'
+
+master\chunk0\fpks\cm_f0_h1_v000_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h1_v000_eye0.fv2
+	'dad3555665bca184'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk0\fpks\cm_m0_h0_v016_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk3\fpks\f30050_d011_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk0\fpks\plfova_avm_hair_c0_v01_fpk\Assets\tpp\fova\chara\avm\avm_hair_c0_v01.fv2
+	'9087877e75e1a284'
+
+master\chunk0\fpks\plfova_avm0_type0_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type0_v00.fv2
+	'134265480fdc9234', '0ccc2aed9f22a184'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk2\fpks\s10040_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk0\fpks\cm_hair_c100_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c100.fv2
+	'128e4954cd19a084'
+
+master\chunk1\fpks\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main0_v00.fv2
+	'23d620dcde67a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8db2b02b65046915', '22335f7d28c36b15', '6fc0a8b280e16915', '650d389a6d986a15', '24ae69d35d9b6915', 'e8e09dc03b336a15'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hair_c0_v01.fv2
+	'9087877e75e1a284'
+
+master\0\00\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd7_eye0.fv2
+	'c08153c34ef6a184'
+
+master\chunk0\fpks\cm_m0_h0_v010_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk3\fpks\f30050_d090_fpk\Assets\tpp\fova\chara\qui\qui0_main_v06.fv2
+	'7815b2f95865e0cd', '7815b2f95865a084', '369b152a96236815', '4ced74af179b6915'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c002.fv2
+	'2725d78dc195a284'
+
+master\chunk0\fpks\cm_m0_h0_v006_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk3\fpks\f30050_d020_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c001.fv2
+	'fb3bcd1931b3a284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v013_eye0.fv2
+	'bce13735be77a284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk3\fpks\f30050_d030_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk1\fpks\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_b.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'b2061e66b47be3cd', 'b2061e66b47ba384', '7e8e342372eb8960', '7d87be5fc63fe0cd', '7d87be5fc63fa084'
+
+master\chunk1\fpks\oce0_main0_v00_fpk\Assets\tpp\fova\chara\oce\oce0_main0_v02.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'a9e02003989f16bf', '0000000000010000'
+
+master\chunk3\fpks\s10240_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr1_main1_v02.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '196b8a0b5c8e6915', '756a9dba01216b15', '5cae128687e16b15', '7dbf6e8b4a088a60', '220200050afea284', 'ffffffff00000000', '0f00ffffffffffff', '0e00ffffffffffff', '87f69b2100000000', '49a0588600000000', '0d00ffffffffffff', '87f69b2100000000', '49a0588600000000', '0b000c00ffffffff', '611be87b87f69b21', '49a0588649a05886', '0a00ffffffffffff', '87f69b2100000000', '49a0588600000000', '0900ffffffffffff', '87f69b2100000000', '49a0588600000000', '08000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '07000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '06000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '05000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '03000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '00000000a0010000', 'cd02010000000100', '0000000028010000', '6e02050002000000', '00000000b0000000', '6402050002000000'
+
+master\chunk1\Assets\tpp\fova\chara\svs\svs0_unq_v072.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '6b0e4462fe1c6a15', '00e6eaf907186a15', '7593ba21c2a76915', 'a9a435d975e6a184', 'f997af7d62926a15'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main1_v02.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15'
+
+master\chunk4\Assets\tpp\fova\chara\dds\ddr0_main0_v00.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '98e51c3e4f84a084', '333de4664e086a15', '354060c40fc46b15', 'ff76104cce4b6815', 'f849b017322d6b15'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk1\fpks\svs0_dds0_v00_fpk\Assets\tpp\fova\chara\svs\svs0_dds0_v00.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '7d65eb7d5cbb9334', '41da223783f8e1cd', '41da223783f8a184'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main1_v04.fv2
+	'a6da5a006795a084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'd4922272f82e8960', '250a530d18d6e1cd', '250a530d18d6a184'
+
+master\chunk1\fpks\oce0_main0_v00_fpk\Assets\tpp\fova\chara\oce\oce0_main0_v01.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk0\fpks\plfova_avm0_type6_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type6_v00.fv2
+	'134265480fdc9234', 'b00612d98c26a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd4_eye0.fv2
+	'30bdb2870ec6a084'
+
+master\chunk2\fpks\s10151_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk0\fpks\plfova_avm1_type3_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type3_v00.fv2
+	'134265480fdc9234', '4776d677f80ca084'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk3\fpks\f30050_d011_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\fpks\cm_f0_h2_v000_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h2_v000_eye1.fv2
+	'd32d88d97978a084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v018_eye0.fv2
+	'8a81d267b103a084'
+
+master\chunk3\fpks\s10240_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\0\02_dat\Assets\tpp\fova\chara\oce\oce0_main0_v01.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v013_eye0.fv2
+	'bce13735be77a284'
+
+master\chunk3\Assets\tpp\fova\chara\qui\qui0_main_v05.fv2
+	'7815b2f95865e0cd', '7815b2f95865a084', 'ab31419dc4386915', '4ced74af179b6915'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk0\fpks\cm_m0_h0_v011_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd1_eye0.fv2
+	'f9fa0ca13595a284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hair_b0_v00.fv2
+	'0ccdb0f895fca284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main1_v03.fv2
+	'45004eb5d116a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '0d274051b3c96815', '16c845bf813a6915'
+
+master\chunk0\fpks\cm_m0_h2_v002_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h2_v002_eye0.fv2
+	'e3ea5ee49686a384'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\fpks\cm_unq_v004_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v004_eye0.fv2
+	'22ca2b884691a084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk0\fpks\cm_m0_h1_v003_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk2\fpks\s10151_d01_fpk\Assets\tpp\fova\chara\wss\wss4_main0_v02.fv2
+	'0afae07405b86b15', 'b098229a8103a184', '0416b16bd4b86b15', '271dfbcdc3e06915', '50835d76e6676b15', 'e66179e6a5616915', '5c2f173653386a15', '0c00ffff05658ab0', '49a0588687f69b21', '87f69b210b00ffff', '49b34ea949a05886', '1683d0cd6e08fb91', '0900ffffd63b28fc', '9b488198e6db2698', 'e6db26980800ffff', '0700ffff9b488198', '9b488198e6db2698', 'e6db26980600ffff', '0500ffff9b488198', '9b488198e6db2698', 'e6db26980400ffff', '0300ffff27108ffa', '27108ffae6db2698', 'e6db26980200ffff', '0100ffff27108ffa', '72e572f1e6db2698', 'e6db26980000ffff', '88a04fb572e572f1', '515ab480022e3bfb', 'e82eef8ee441eea3', '23eae0c607b77f97', '5a2c061f0a8a3b4c', 'c6d72ad52e68636d', '00000000bc010000', 'c902010100000000', '00000000a4010000', '6e02020001000000', '00000000a0010000', '0903010100000000', '000000009c010000', '0803010100000000', '0000000094010000', '0702020100000000', '0000000058010000', '0602050001000000', '0000000034010000', '0502030001000000', '000000001c010000', '0402020001000000', '0000000010010000', '0302030100000000', '0000000000010000', '0202040100000000', '00000000f0000000', '0102040100000000'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main0_v02.fv2
+	'a6da5a006795a084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '250a530d18d6e1cd', '250a530d18d6a184', 'ffffffffffffffff', 'ffffffff0e00ffff', '000000000d00ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000c00ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b210a000b00', '49a05886611be87b', 'ffffffff49a05886', '000000000900ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000800ffff', '0000000087f69b21', '0700ffff49a05886', '1bdd0582611be87b', '611be87b0600ffff', '0500ffff1bdd0582', '1bdd0582611be87b', '611be87b0400ffff', '0300ffff1bdd0582', '1bdd0582611be87b', '0000000064010000', 'cd02010000000100', '00000000ec000000', '6e02050002000000', '00000000b0000000', '6402050001000000'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk0\fpks\cm_dds5_head_z_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\fpks\cm_hair_c104_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c104.fv2
+	'8456ddb39a6c9334', 'f18a665fb4dba284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk0\fpks\plfova_avm1_type7_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type7_v00.fv2
+	'134265480fdc9234', 'f796f2ac0212a084'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk1\fpks\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main1_v00.fv2
+	'23d620dcde67a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '196b8a0b5c8e6915', '756a9dba01216b15', '5cae128687e16b15', 'c51c7485fa3b6b15', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15'
+
+master\chunk0\fpks\cm_hair_c002_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c002.fv2
+	'2725d78dc195a284'
+
+master\chunk0\fpks\cm_m0_h2_v000_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h2_v000_eye0.fv2
+	'54508508cc9ca084'
+
+master\chunk0\fpks\cm_hair_c102_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c102.fv2
+	'de8de2b9fbc1a084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c000.fv2
+	'2e59537d1a28a384'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\chara\oce\oce0_main0_v01.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk3\fpks\f30050_d090_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk3\fpks\f30050_d000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\0\00\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk0\fpks\cm_dds8_eqhd1_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd1_eye0.fv2
+	'34c985c29065a384'
+
+master\chunk1\fpks\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main0_v02.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8db2b02b65046915', '22335f7d28c36b15', '220200050afea284', 'ffffffffffffffff', 'ffffffff0d00ffff', '000000000c00ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000b00ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b2109000a00', '49a05886611be87b', 'ffffffff49a05886', '000000000800ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000700ffff', '0000000087f69b21', '0600ffff49a05886', '1bdd0582611be87b', '611be87b0500ffff', '0400ffff1bdd0582', '1bdd0582611be87b', '611be87b0300ffff', '0200ffff1bdd0582', '1bdd0582611be87b', '0000000064010000', 'cd02010000000100', '00000000ec000000', '6e02050002000000', '00000000b0000000', '6402050001000000'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h2_v001_eye0.fv2
+	'3d1b06819553a384'
+
+master\chunk1\Assets\tpp\fova\chara\pfs\pfs0_unq_v280.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '78dd07a2019be2cd', '78dd07a2019ba284'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v002_eye0.fv2
+	'8767c04203bea184'
+
+master\chunk0\fpks\plfova_avm0_type5_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type5_v00.fv2
+	'134265480fdc9234', 'b780a4a03756a184'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk1\fpks\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main1_v02.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '196b8a0b5c8e6915', '756a9dba01216b15', '5cae128687e16b15', '7dbf6e8b4a088a60', '220200050afea284', 'ffffffff00000000', '0f00ffffffffffff', '0e00ffffffffffff', '87f69b2100000000', '49a0588600000000', '0d00ffffffffffff', '87f69b2100000000', '49a0588600000000', '0b000c00ffffffff', '611be87b87f69b21', '49a0588649a05886', '0a00ffffffffffff', '87f69b2100000000', '49a0588600000000', '0900ffffffffffff', '87f69b2100000000', '49a0588600000000', '08000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '07000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '06000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '05000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '03000400ffffffff', '611be87b0eb1986b', '1bdd05821bdd0582', '00000000a0010000', 'cd02010000000100', '0000000028010000', '6e02050002000000', '00000000b0000000', '6402050002000000'
+
+master\chunk0\fpks\plfova_avm0_type1_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type1_v00.fv2
+	'134265480fdc9234', 'b02ad8519426a184'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v018_eye0.fv2
+	'8a81d267b103a084'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v013_eye0.fv2
+	'bce13735be77a284'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\fpks\cm_m0_h0_v018_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v018_eye0.fv2
+	'8a81d267b103a084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk0\fpks\cm_f0_h2_v001_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h2_v001_eye0.fv2
+	'2e9b21cbf415a384'
+
+master\chunk0\fpks\plfova_avm_hone_v01_fpk\Assets\tpp\fova\chara\avm\avm_hone_v01.fv2
+	'e6caf7219ff9a384'
+
+master\chunk1\Assets\tpp\fova\chara\oce\oce0_main0_v02.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'a9e02003989f16bf', '0000000000010000'
+
+master\chunk0\fpks\cm_f0_h0_v001_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v001_eye0.fv2
+	'493b491fd7e4a184'
+
+master\chunk1\fpks\hyu0_main0_v02_fpk\Assets\tpp\fova\chara\hyu\hyu0_main0_v02.fv2
+	'46ad8e3bf864a184', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hone_v01.fv2
+	'e6caf7219ff9a384'
+
+master\chunk1\Assets\tpp\fova\chara\svs\sva0_v00_a.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8a88d1b3a1fbe1cd', '8a88d1b3a1fba184', '21b5d6a671f7e2cd', '21b5d6a671f7a284'
+
+master\0\00\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v001_eye0.fv2
+	'493b491fd7e4a184'
+
+master\chunk1\Assets\tpp\fova\chara\hyu\hyu0_main0_v02.fv2
+	'46ad8e3bf864a184', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk0\fpks\plfova_avm0_type3_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type3_v00.fv2
+	'134265480fdc9234', '3200e47dd897a384'
+
+master\chunk0\fpks\plfova_avm1_type5_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type5_v00.fv2
+	'134265480fdc9234', '6ff186f97a09a184'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk3\fpks\f30050_d010_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type3_v00.fv2
+	'134265480fdc9234', '4776d677f80ca084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c107.fv2
+	'ef5c69d44640a384'
+
+master\0\00\Assets\tpp\pack\fova\chara\oce\oce0_main0_v00_fpk\Assets\tpp\fova\chara\oce\oce0_main0_v00.fv2
+	'7da3a4da48b4a084', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk0\Assets\tpp\fova\item\msk\plf0_msk1_v00.fv2
+	'd260ef36e2759034', 'b3d50da335f4a384'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type7_v00.fv2
+	'134265480fdc9234', 'f796f2ac0212a084'
+
+master\chunk0\fpks\plfova_avm_hair_c0_v00_fpk\Assets\tpp\fova\chara\avm\avm_hair_c0_v00.fv2
+	'147a581c2639a084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h2_v000_eye0.fv2
+	'54508508cc9ca084'
+
+master\chunk2\Assets\tpp\fova\chara\wss\wss4_main0_v02.fv2
+	'0afae07405b86b15', 'b098229a8103a184', '0416b16bd4b86b15', '271dfbcdc3e06915', '50835d76e6676b15', 'e66179e6a5616915', '5c2f173653386a15', '0c00ffff05658ab0', '49a0588687f69b21', '87f69b210b00ffff', '49b34ea949a05886', '1683d0cd6e08fb91', '0900ffffd63b28fc', '9b488198e6db2698', 'e6db26980800ffff', '0700ffff9b488198', '9b488198e6db2698', 'e6db26980600ffff', '0500ffff9b488198', '9b488198e6db2698', 'e6db26980400ffff', '0300ffff27108ffa', '27108ffae6db2698', 'e6db26980200ffff', '0100ffff27108ffa', '72e572f1e6db2698', 'e6db26980000ffff', '88a04fb572e572f1', '515ab480022e3bfb', 'e82eef8ee441eea3', '23eae0c607b77f97', '5a2c061f0a8a3b4c', 'c6d72ad52e68636d', '00000000bc010000', 'c902010100000000', '00000000a4010000', '6e02020001000000', '00000000a0010000', '0903010100000000', '000000009c010000', '0803010100000000', '0000000094010000', '0702020100000000', '0000000058010000', '0602050001000000', '0000000034010000', '0502030001000000', '000000001c010000', '0402020001000000', '0000000010010000', '0302030100000000', '0000000000010000', '0202040100000000', '00000000f0000000', '0102040100000000'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd2_eye0.fv2
+	'c694492ec814a084'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type4_v00.fv2
+	'134265480fdc9234', '2fe4314dd1aea084'
+
+master\0\00\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk3\fpks\f30050_d010_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v012_eye1.fv2
+	'8907162acbc8a284'
+
+master\chunk3\fpks\f30050_d000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\fpks\plfova_avm_hone_v00_fpk\Assets\tpp\fova\chara\avm\avm_hone_v00.fv2
+	'49e9fb86de32a284'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk3\fpks\f30050_d010_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr1_main0_v00.fv2
+	'23d620dcde67a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8db2b02b65046915', '22335f7d28c36b15', '6fc0a8b280e16915', '650d389a6d986a15', '24ae69d35d9b6915', 'e8e09dc03b336a15'
+
+master\chunk4\fpks\s10100_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk0\fpks\plfova_plf0_msk0_v00_fpk\Assets\tpp\fova\item\msk\plf0_msk0_v00.fv2
+	'7394162025729334', 'a30bfbf9ae96a084'
+
+master\chunk0\fpks\cm_svs0_head_z_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_svs0_head_z_eye0.fv2
+	'cf501adb4cb3a384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds6_head_z_eye0.fv2
+	'3eb3b054e884a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c001.fv2
+	'fb3bcd1931b3a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr1_main1_v01.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '196b8a0b5c8e6915', '756a9dba01216b15', '5cae128687e16b15', 'c51c7485fa3b6b15', '0d274051b3c96815', '16c845bf813a6915', 'ffffffffffffffff', 'ffffffff1200ffff', '000000001100ffff', '0000000087f69b21', 'ffffffff49a05886', '000000001000ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b210e000f00', '49a05886611be87b', 'ffffffff49a05886', '000000000d00ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000c00ffff', '0000000087f69b21', 'ffffffff49a05886', '0eb1986b0b000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0a000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b09000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b08000700', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b06000700', '1bdd0582611be87b', '8cfe321d1bdd0582', 'ede7b0557a062a11', '02000100ffffffff', '611be87b0eb1986b', '06c7bf6306c7bf63', '00000100ffffffff', '611be87b0eb1986b', '06c7bf6306c7bf63', '6e16fa9d00000000', '18712a6b092cc5d6', '092cc5d6c60caef3', '6e16fa9d00000000', '000000006132c4d9', '6132c4d918712a6b', '0000000034020000', 'cd02010000000100', '00000000bc010000', '6e02050002000000', '0000000044010000', '6402050002000000', '0000000038010000', '0902030100000000', '0000000008010000', '0302020002000000', '00000000d8000000', '0202040300000000'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v018_eye0.fv2
+	'8a81d267b103a084'
+
+master\chunk0\fpks\cm_m0_h0_v002_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk0\fpks\cm_hair_c106_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c106.fv2
+	'2da5ff2e7b11a084'
+
+master\chunk0\fpks\cm_m0_h0_v008_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk0\fpks\cm_unq_v001_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v001_eye1.fv2
+	'36445bb377d6a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v003_eye1.fv2
+	'b754eeb40b21a384', '2252cd8c06da9034', '5c20d98fdf05a184'
+
+master\chunk3\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk4\fpks\s10100_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk0\fpks\cm_unq_v005_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v005_eye0.fv2
+	'794fcfdfd240a284'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\0\00\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd6_eye0.fv2
+	'0eff63ee905da084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c000.fv2
+	'2e59537d1a28a384'
+
+master\0\00\Assets\tpp\pack\fova\chara\oce\oce0_main0_v00_fpk\Assets\tpp\fova\chara\oce\oce0_main0_v01.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk3\Assets\tpp\fova\chara\qui\qui0_main_v06.fv2
+	'7815b2f95865e0cd', '7815b2f95865a084', '369b152a96236815', '4ced74af179b6915'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd3_eye0.fv2
+	'ed1e64b6d255a284'
+
+master\0\00\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk3\fpks\f30050_d1020_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk3\fpks\f30050_d030_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c002.fv2
+	'2725d78dc195a284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk3\fpks\s10240_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk1\Assets\tpp\fova\chara\svs\svs0_dds0_v00.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '7d65eb7d5cbb9334', '41da223783f8e1cd', '41da223783f8a184'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk3\fpks\f30050_d010_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main1_v01.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15'
+
+master\chunk0\fpks\cm_dds8_eqhd2_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd2_eye0.fv2
+	'c694492ec814a084'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type4_v00.fv2
+	'134265480fdc9234', '37f019c24058a384'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v007_eye0.fv2
+	'b856b95d0c52a184', '329b16fa90a1a084'
+
+master\chunk0\fpks\cm_m0_h0_v004_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk3\fpks\s10240_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk3\fpks\f30050_d090_fpk\Assets\tpp\fova\chara\qui\qui0_main_v07.fv2
+	'7815b2f95865e0cd', '7815b2f95865a084', 'ab31419dc4386915', '4ced74af179b6915'
+
+master\chunk0\fpks\cm_m0_h0_v017_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk2\fpks\s10151_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h1_v000_eye0.fv2
+	'dad3555665bca184'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v012_eye1.fv2
+	'8907162acbc8a284'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk0\fpks\cm_pfs0_head_z_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_pfs0_head_z_eye0.fv2
+	'9f38d8ce0481a384'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type5_v00.fv2
+	'134265480fdc9234', 'b780a4a03756a184'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type5_v00.fv2
+	'134265480fdc9234', '6ff186f97a09a184'
+
+master\chunk1\fpks\ddr1_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr1_main0_v01.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8db2b02b65046915', '22335f7d28c36b15', '6fc0a8b280e16915', 'f849b017322d6b15'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main1_v04.fv2
+	'a6da5a006795a084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'd4922272f82e8960', '250a530d18d6e1cd', '250a530d18d6a184'
+
+master\chunk0\fpks\cm_f0_h2_v002_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h2_v002_eye0.fv2
+	'671ab8db6bbca184'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_svs0_head_z_eye0.fv2
+	'cf501adb4cb3a384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk0\fpks\plfova_avm0_type2_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type2_v00.fv2
+	'134265480fdc9234', '3b2a6c15c585a284'
+
+master\0\00\Assets\tpp\pack\fova\chara\oce\oce0_main0_v00_fpk\Assets\tpp\fova\chara\oce\gog0_main0_def.fv2
+	'7da3a4da48b4a084', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk0\fpks\cm_hair_c107_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c107.fv2
+	'ef5c69d44640a384'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\0\00\fpks\cm_dds8_eqhd6_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd6_eye0.fv2
+	'bbdbc9d6609da284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk3\fpks\f30050_d020_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\0\00\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk0\fpks\cm_hair_c001_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c001.fv2
+	'fb3bcd1931b3a284'
+
+master\chunk0\fpks\plfova_avm1_type2_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type2_v00.fv2
+	'134265480fdc9234', '32afef54a837a384'
+
+master\chunk3\fpks\f30050_d1020_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v012_eye1.fv2
+	'8907162acbc8a284'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk3\fpks\f30050_d040_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk3\fpks\f30050_d021_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk1\Assets\tpp\fova\chara\pfs\pfa0_v00_a.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'b2061e66b47be3cd', 'b2061e66b47ba384', 'b3c3732721c78860', '7d87be5fc63fe0cd', '7d87be5fc63fa084'
+
+master\chunk0\fpks\cm_m0_h2_v001_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h2_v001_eye0.fv2
+	'3d1b06819553a384'
+
+master\chunk0\fpks\cm_m0_h1_v000_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\0\00\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk1\fpks\pfa0_main0_v00_fpk\Assets\tpp\fova\chara\pfs\pfa0_v00_a.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'b2061e66b47be3cd', 'b2061e66b47ba384', 'b3c3732721c78860', '7d87be5fc63fe0cd', '7d87be5fc63fa084'
+
+master\chunk3\fpks\f30050_d000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c000.fv2
+	'2e59537d1a28a384'
+
+master\chunk0\fpks\cm_hair_c003_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c003.fv2
+	'54987b074965a084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk3\fpks\f30050_d080_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v001_eye1.fv2
+	'36445bb377d6a284'
+
+master\chunk3\fpks\f30050_d010_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\0\00\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd7_eye0.fv2
+	'3054b153c3b4a184'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c002.fv2
+	'2725d78dc195a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v006_eye0.fv2
+	'a9a435d975e6a184', '329b16fa90a1a084'
+
+master\chunk3\fpks\f30050_d000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v004_eye0.fv2
+	'22ca2b884691a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c104.fv2
+	'8456ddb39a6c9334', 'f18a665fb4dba284'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\0\00\fpks\cm_dds3_eqhd7_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd7_eye0.fv2
+	'c08153c34ef6a184'
+
+master\chunk3\fpks\f30050_d020_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type0_v00.fv2
+	'134265480fdc9234', 'ad601fda75b7a384'
+
+master\chunk1\Assets\tpp\fova\chara\pfs\pfs0_dds0_v00.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '7d65eb7d5cbb9334', '41da223783f8e1cd', '41da223783f8a184'
+
+master\chunk0\fpks\plfova_avm_hair_a0_v01_fpk\Assets\tpp\fova\chara\avm\avm_hair_a0_v01.fv2
+	'3b9fd31c6fcba284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c102.fv2
+	'de8de2b9fbc1a084'
+
+master\chunk3\fpks\s10240_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\fpks\cm_m0_h0_v015_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk3\fpks\f30050_d090_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type1_v00.fv2
+	'134265480fdc9234', 'b02ad8519426a184'
+
+master\chunk3\fpks\f30050_d1020_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk2\fpks\s10151_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main0_v02.fv2
+	'a6da5a006795a084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '250a530d18d6e1cd', '250a530d18d6a184', 'ffffffffffffffff', 'ffffffff0e00ffff', '000000000d00ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000c00ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b210a000b00', '49a05886611be87b', 'ffffffff49a05886', '000000000900ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000800ffff', '0000000087f69b21', '0700ffff49a05886', '1bdd0582611be87b', '611be87b0600ffff', '0500ffff1bdd0582', '1bdd0582611be87b', '611be87b0400ffff', '0300ffff1bdd0582', '1bdd0582611be87b', '0000000064010000', 'cd02010000000100', '00000000ec000000', '6e02050002000000', '00000000b0000000', '6402050001000000'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type6_v00.fv2
+	'134265480fdc9234', '5db92dcedd94a184'
+
+master\chunk0\fpks\cm_m0_h0_v000_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hone_v00.fv2
+	'49e9fb86de32a284'
+
+master\chunk0\fpks\cm_unq_v003_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v003_eye1.fv2
+	'b754eeb40b21a384', '2252cd8c06da9034', '5c20d98fdf05a184'
+
+master\chunk3\fpks\s10240_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk2\fpks\s10260_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v013_eye0.fv2
+	'bce13735be77a284'
+
+master\chunk1\Assets\tpp\fova\chara\hyu\hyu0_main0_v01.fv2
+	'e09eab0d946fa184', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk0\fpks\cm_f0_h1_v001_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h1_v001_eye0.fv2
+	'39e883414a14a184'
+
+master\chunk3\fpks\f30050_d011_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v003_eye0.fv2
+	'4adccf42b610a284'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type7_v00.fv2
+	'134265480fdc9234', '95c744e93958a284'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main1_v01.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v002_eye0.fv2
+	'8632c3542d74a384'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main1_v02.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c001.fv2
+	'fb3bcd1931b3a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk0\fpks\cm_m0_h0_v007_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk2\fpks\s10260_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk3\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk3\fpks\f30050_d021_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h2_v002_eye0.fv2
+	'671ab8db6bbca184'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type0_v00.fv2
+	'134265480fdc9234', '0ccc2aed9f22a184'
+
+master\chunk3\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c003.fv2
+	'54987b074965a084'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v013_eye0.fv2
+	'bce13735be77a284'
+
+master\chunk0\fpks\cm_m0_h0_v014_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v002_eye0.fv2
+	'db17574cad0aa284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk1\Assets\tpp\fova\chara\oce\oce0_main0_v01.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk4\fpks\s10100_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk3\fpks\s10240_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk3\fpks\f30050_d030_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\fpks\f30011_fpk\Assets\tpp\fova\chara\vol\vol2_v02.fv2
+	'44c903e836856915', '81104bbec50fa184'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c005.fv2
+	'50a40945f951a084'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm1_type2_v00.fv2
+	'134265480fdc9234', '32afef54a837a384'
+
+master\chunk3\fpks\f30050_d021_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\fpks\cm_unq_v006_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v006_eye0.fv2
+	'a9a435d975e6a184', '329b16fa90a1a084'
+
+master\chunk0\fpks\plfova_avm_hair_b0_v00_fpk\Assets\tpp\fova\chara\avm\avm_hair_b0_v00.fv2
+	'0ccdb0f895fca284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type6_v00.fv2
+	'134265480fdc9234', 'b00612d98c26a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main0_v01.fv2
+	'45004eb5d116a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '6fc0a8b280e16915', 'f849b017322d6b15'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk2\fpks\s10150_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v014_eye1.fv2
+	'309abaa41baaa284'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk0\fpks\cm_f0_h1_v002_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h1_v002_eye0.fv2
+	'fab448182816a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd5_eye0.fv2
+	'64d4b74dc775a084'
+
+master\chunk0\fpks\cm_m0_h0_v013_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v013_eye0.fv2
+	'bce13735be77a284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk0\fpks\cm_unq_v000_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v000_eye1.fv2
+	'e9382f0d6777a184', 'ac5983e6a2dda084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v016_eye1.fv2
+	'635155f9efb4a184'
+
+master\chunk3\fpks\f30050_d1000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk0\fpks\cm_dds8_eqhd3_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd3_eye0.fv2
+	'ed1e64b6d255a284'
+
+master\chunk3\fpks\f30050_d030_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hair_a0_v01.fv2
+	'3b9fd31c6fcba284'
+
+master\chunk2\fpks\s10260_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk0\fpks\cm_unq_v007_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v007_eye0.fv2
+	'b856b95d0c52a184', '329b16fa90a1a084'
+
+master\chunk2\fpks\s10260_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk1\fpks\hyu0_main0_v01_fpk\Assets\tpp\fova\chara\hyu\hyu0_main0_v01.fv2
+	'e09eab0d946fa184', 'ffffffff00000000', '0000ffffffffffff', 'eb77febf989f16bf', '0000000000010000'
+
+master\chunk0\fpks\cm_f0_h0_v000_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v000_eye0.fv2
+	'5f80a1ad58faa184'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk2\fpks\s10260_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk0\fpks\cm_hair_c000_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c000.fv2
+	'2e59537d1a28a384'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v004_eye0.fv2
+	'78fa8736fb17a384'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk4\fpks\s10100_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk0\fpks\cm_hair_c105_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c105.fv2
+	'4189ef500ab1a284'
+
+master\chunk0\fpks\cm_m0_h0_v005_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd6_eye0.fv2
+	'bbdbc9d6609da284'
+
+master\chunk2\fpks\s10150_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h2_v000_eye1.fv2
+	'd32d88d97978a084'
+
+master\chunk1\fpks\ddr0_main0_v00_fpk\Assets\tpp\fova\chara\dds\ddr0_main1_v00.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '2796739520a5a184', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15', 'ffffffffffffffff', 'ffffffff1800ffff', '000000001700ffff', '0000000087f69b21', 'ffffffff49a05886', '000000001600ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b2114001500', '49a05886611be87b', 'ffffffff49a05886', '000000001300ffff', '0000000087f69b21', 'ffffffff49a05886', '000000001200ffff', '0000000087f69b21', 'ffffffff49a05886', '0eb1986b11000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b10000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0f000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0e000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0c000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0900ffffffffffff', '0000000034020000', 'cd02010000000100', '00000000bc010000', '6e02050002000000', '0000000044010000', '6402050002000000', '0000000038010000', '0c03010000000100'
+
+master\chunk0\fpks\cm_m0_h1_v001_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v001_eye0.fv2
+	'321959d6adc1a184'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk2\Assets\tpp\fova\chara\vol\vol2_v01.fv2
+	'169b693f97746915', '81104bbec50fa184', '8c056674a829a184', 'ffffffff00000000', '0100ffffffffffff', 'ffffffffffffffff', 'ffffffff0000ffff', '020003000300ffff', '0eb1986b24f7f217', '225bce06611be87b', '225bce06225bce06', '8cfd744e0185e8a9', '0200030002000000', '0200000000000000', '7000000000000000', '7000700000000400', '464f563277696e01'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v018_eye0.fv2
+	'8a81d267b103a084'
+
+master\0\00\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd6_eye0.fv2
+	'bbdbc9d6609da284'
+
+master\chunk0\fpks\cm_unq_v002_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v002_eye0.fv2
+	'8632c3542d74a384'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk2\fpks\s10151_d05_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v003_eye0.fv2
+	'ee41546b0ae5a384'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v010_eye0.fv2
+	'682fb1cb32afa384'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c105.fv2
+	'4189ef500ab1a284'
+
+master\chunk3\fpks\f30050_d010_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v000_eye0.fv2
+	'5f80a1ad58faa184'
+
+master\chunk0\fpks\cm_f0_h0_v003_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_f0_h0_v003_eye0.fv2
+	'4adccf42b610a284'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main0_v01.fv2
+	'45004eb5d116a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '6fc0a8b280e16915', 'f849b017322d6b15'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr1_main0_v02.fv2
+	'fc73d2c40cffa084', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '8db2b02b65046915', '22335f7d28c36b15', '220200050afea284', 'ffffffffffffffff', 'ffffffff0d00ffff', '000000000c00ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000b00ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b2109000a00', '49a05886611be87b', 'ffffffff49a05886', '000000000800ffff', '0000000087f69b21', 'ffffffff49a05886', '000000000700ffff', '0000000087f69b21', '0600ffff49a05886', '1bdd0582611be87b', '611be87b0500ffff', '0400ffff1bdd0582', '1bdd0582611be87b', '611be87b0300ffff', '0200ffff1bdd0582', '1bdd0582611be87b', '0000000064010000', 'cd02010000000100', '00000000ec000000', '6e02050002000000', '00000000b0000000', '6402050001000000'
+
+master\chunk0\fpks\cm_dds6_head_z_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds6_head_z_eye0.fv2
+	'3eb3b054e884a284'
+
+master\chunk0\fpks\plfova_avm1_type1_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type1_v00.fv2
+	'134265480fdc9234', '04569b0c04d7a084'
+
+master\chunk0\fpks\cm_m0_h0_v012_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v012_eye1.fv2
+	'8907162acbc8a284'
+
+master\chunk0\fpks\plfova_avm_hone_v02_fpk\Assets\tpp\fova\chara\avm\avm_hone_v02.fv2
+	'aa635b4bdbd0a084'
+
+master\chunk1\Assets\tpp\fova\chara\pfs\pfa0_v00_c.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'b2061e66b47be3cd', 'b2061e66b47ba384', '37bfc93af5788860', '7d87be5fc63fe0cd', '7d87be5fc63fa084'
+
+master\chunk3\fpks\s10240_area02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk3\fpks\f30050_d040_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v000_eye0.fv2
+	'329b16fa90a1a084'
+
+master\chunk3\fpks\f30050_d030_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\0\00\fpks\cm_dds8_eqhd7_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd7_eye0.fv2
+	'3054b153c3b4a184'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd6_eye0.fv2
+	'0eff63ee905da084'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v012_eye1.fv2
+	'8907162acbc8a284'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\0\02_dat\Assets\tpp\fova\chara\oce\oce0_main0_v02.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'a9e02003989f16bf', '0000000000010000'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hair_c0_v00.fv2
+	'147a581c2639a084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c004.fv2
+	'cbc2c43f6303a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\sp_hair_c000.fv2
+	'1ddc7599d3a6a284'
+
+master\chunk0\fpks\cm_hair_c103_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c103.fv2
+	'bf71ca13a7479134', '397753bc6dcfa384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c100.fv2
+	'128e4954cd19a084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h1_v004_eye0.fv2
+	'b2a7940623fba284'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr1_main1_v00.fv2
+	'23d620dcde67a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '196b8a0b5c8e6915', '756a9dba01216b15', '5cae128687e16b15', 'c51c7485fa3b6b15', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15'
+
+master\chunk2\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk2\fpks\s10151_d04_fpk\Assets\tpp\fova\chara\dds\dds5_main0_v01.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '5227b06baaa9a384', 'ec26411b2de66915'
+
+master\chunk0\fpks\plfova_avm1_type4_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type4_v00.fv2
+	'134265480fdc9234', '37f019c24058a384'
+
+master\chunk0\fpks\sp_hair_c000_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\sp_hair_c000.fv2
+	'1ddc7599d3a6a284'
+
+master\0\00\fpks\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v005_eye1.fv2
+	'0f1aae11b871a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\fpks\plfova_avm0_type7_v00_fpk\Assets\tpp\fova\chara\avm\avm0_type7_v00.fv2
+	'134265480fdc9234', '95c744e93958a284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk4\fpks\s10140_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v017_eye1.fv2
+	'5045e4278dc9a084'
+
+master\chunk2\fpks\s10050_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk2\fpks\f30011_fpk\Assets\tpp\fova\chara\vol\vol2_v01.fv2
+	'169b693f97746915', '81104bbec50fa184', '8c056674a829a184', 'ffffffff00000000', '0100ffffffffffff', 'ffffffffffffffff', 'ffffffff0000ffff', '020003000300ffff', '0eb1986b24f7f217', '225bce06611be87b', '225bce06225bce06', '8cfd744e0185e8a9', '0200030002000000', '0200000000000000', '7000000000000000', '7000700000000400', '464f563277696e01'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v018_eye0.fv2
+	'8a81d267b103a084'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm_hair_b0_v01.fv2
+	'607a9b385a5aa384'
+
+master\chunk0\fpks\cm_m0_h0_v009_eye1_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c106.fv2
+	'2da5ff2e7b11a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds8_eqhd1_eye0.fv2
+	'34c985c29065a384'
+
+master\chunk0\fpks\cm_dds3_eqhd4_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd4_eye0.fv2
+	'30bdb2870ec6a084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main1_v03.fv2
+	'45004eb5d116a184', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '0d274051b3c96815', '16c845bf813a6915'
+
+master\0\00\Assets\tpp\pack\fova\chara\oce\oce0_main0_v00_fpk\Assets\tpp\fova\chara\oce\oce0_main0_v02.fv2
+	'3912ea51948ca384', 'ffffffff00000000', '0000ffffffffffff', 'a9e02003989f16bf', '0000000000010000'
+
+master\chunk3\Assets\tpp\fova\chara\qui\qui0_main_v07.fv2
+	'7815b2f95865e0cd', '7815b2f95865a084', 'ab31419dc4386915', '4ced74af179b6915'
+
+master\0\00\fpks\cm_dds3_eqhd6_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd6_eye0.fv2
+	'0eff63ee905da084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v002_eye0.fv2
+	'09d45caea6fea284'
+
+master\chunk3\fpks\f30050_d011_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v001_eye0.fv2
+	'b0524f772413a084'
+
+master\chunk3\fpks\s10240_d03_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v009_eye1.fv2
+	'64314605f075a384'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
+
+master\chunk4\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v007_eye0.fv2
+	'80afc2c0bfa1a284'
+
+master\chunk3\fpks\f30050_d011_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v000_eye0.fv2
+	'5bd9ddb64c9ea284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c003.fv2
+	'54987b074965a084'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c101.fv2
+	'6f42840cd1d0a284'
+
+master\chunk0\Assets\tpp\fova\common_source\chara\cm_head\face\cm_unq_v000_eye1.fv2
+	'e9382f0d6777a184', 'ac5983e6a2dda084'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\fpks\f30050_d020_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds5_head_z_eye0.fv2
+	'02a41de48031a284'
+
+master\chunk2\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c001.fv2
+	'fb3bcd1931b3a284'
+
+master\chunk0\fpks\cm_dds3_eqhd5_eye0_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_dds3_eqhd5_eye0.fv2
+	'64d4b74dc775a084'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main0_v00.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '09bb038291256b15', '9fea3ae103e96a15', '98e51c3e4f84a084', '333de4664e086a15', '354060c40fc46b15', 'ff76104cce4b6815', 'f849b017322d6b15'
+
+master\chunk0\fpks\plfova_avm1_type0_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type0_v00.fv2
+	'134265480fdc9234', 'ad601fda75b7a384'
+
+master\chunk0\Assets\tpp\fova\chara\avm\avm0_type2_v00.fv2
+	'134265480fdc9234', '3b2a6c15c585a284'
+
+master\chunk1\Assets\tpp\fova\chara\dds\ddr0_main1_v00.fv2
+	'744d23f654c1a284', '32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', 'e3ad7e54e26c6b15', '716e769551e36815', '6ca452e782c96815', 'c51c7485fa3b6b15', '2796739520a5a184', '672bfcd79be66915', '3cc6c4a5049c6915', 'ce10b82ea9b66a15', '5a4c7fe97fa86b15', 'ffffffffffffffff', 'ffffffff1800ffff', '000000001700ffff', '0000000087f69b21', 'ffffffff49a05886', '000000001600ffff', '0000000087f69b21', 'ffffffff49a05886', '87f69b2114001500', '49a05886611be87b', 'ffffffff49a05886', '000000001300ffff', '0000000087f69b21', 'ffffffff49a05886', '000000001200ffff', '0000000087f69b21', 'ffffffff49a05886', '0eb1986b11000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b10000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0f000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0e000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0eb1986b0c000d00', '1bdd0582611be87b', 'ffffffff1bdd0582', '0900ffffffffffff', '0000000034020000', 'cd02010000000100', '00000000bc010000', '6e02050002000000', '0000000044010000', '6402050002000000', '0000000038010000', '0c03010000000100'
+
+master\chunk3\fpks\s10240_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v006_eye1.fv2
+	'ac5983e6a2dda084'
+
+master\chunk2\fpks\s10260_d01_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk3\fpks\f30050_d000_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk4\fpks\s10100_d02_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v008_eye0.fv2
+	'b9421877329fa084'
+
+master\chunk3\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v011_eye0.fv2
+	'fb1e7c4aae8ca384'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk0\fpks\plfova_avm1_type6_v00_fpk\Assets\tpp\fova\chara\avm\avm1_type6_v00.fv2
+	'134265480fdc9234', '5db92dcedd94a184'
+
+master\chunk0\fpks\cm_hair_c005_fpk\Assets\tpp\fova\common_source\chara\cm_head\hair\cm_hair_c005.fv2
+	'50a40945f951a084'
+
+master\chunk1\fpks\pfs0_dds0_v00_fpk\Assets\tpp\fova\chara\pfs\pfs0_dds0_v00.fv2
+	'32e2877da1b66b15', '8fde273329b36b15', '0afae07405b86b15', '7d65eb7d5cbb9334', '41da223783f8e1cd', '41da223783f8a184'
+
+master\chunk2\Assets\tpp\fova\chara\vol\vol2_v02.fv2
+	'44c903e836856915', '81104bbec50fa184'
+
+master\chunk3\fpks\f30050_d300_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v015_eye1.fv2
+	'8b92d4f0149da184'
+
+master\chunk2\fpks\s10151_d06_fpk\Assets\tpp\fova\common_source\chara\cm_head\face\cm_m0_h0_v003_eye0.fv2
+	'47db5c609a1ba084'
