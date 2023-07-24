@@ -47,7 +47,7 @@
             (mission 43 Shining Lights, when Snake puts on his respirator).</p>
             <p>Models have mesh, bones and connection point identificators in them. These
             identificators are used in .fv2 in hashed form to specify the element to modify.
-            Partial list of these hashes was compiled by <a href='http://forum.xentax.com/viewtopic.php?p=121100#p121100'>YouRePrettyGood</a>.
+            Partial list of these hashes was compiled by <a href='https://forum.xentax.com/viewtopic.php?p=121100#p121100'>YouRePrettyGood</a>.
             Hashing method is unknown. Only first 4 bytes of these hashes are used in fv2,
             full hashes can be found in fmdl.</p>
         
@@ -78,7 +78,7 @@
             to command. This is also a big problem.</p>
 
         <h3>Format structure</h3>
-        <p>First structure was made by <a href='http://forum.xentax.com/viewtopic.php?p=121318#p121318'>YouRePrettyGood</a>.
+        <p>First structure was made by <a href='https://forum.xentax.com/viewtopic.php?p=121318#p121318'>YouRePrettyGood</a>.
         Most of that info is right, but some sections are doubtful. Please keep in mind that 
         I digged format with only one purpose - to combine 2 fmdls, so some bytes 
         were ignored.</p>
@@ -484,7 +484,7 @@ section 4
     9CDC9C9A45019134 - .sim
     75F64D17D875A384 - new .fmdl</code></pre>
         
-        You can also use <a href="http://forum.xentax.com/viewtopic.php?p=121318#p121318">
+        You can also use <a href="https://forum.xentax.com/viewtopic.php?p=121318#p121318">
         script for Hex Workshop by YouRePrettyGood</a>, but it is 
         really slow on some fv2. It is useful for big files, but text editor is 
         faster.
@@ -658,7 +658,7 @@ will make: C:\1_moved.fmdl and C:\1_sections.txt. There are some offsets at the 
         Unpack <code>0\00\Assets\tpp\pack\resident\resident00.pftxs</code> with gsz_tool. Go to <code>Assets\tpp\hats\textures\mgo\allclass\hat0</code> (create missing folders). Put your textures there.
         Create test.dat.xml:
         <pre><code>&lt?xml version="1.0"?&gt
-&ltArchiveFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="QarFile" Name="test.dat" Flags="3150304"&gt
+&ltArchiveFile xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xsi:type="QarFile" Name="test.dat" Flags="3150304"&gt
   &ltEntries&gt
     &ltEntry FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex1.ftex" Compressed="false" /&gt
     &ltEntry FilePath="/Assets/tpp/hats/textures/mgo/allclass/hat0/tex2.ftex" Compressed="false" /&gt
@@ -690,13 +690,13 @@ d3 73 85 dc df 5b 6b 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex4.ftex
     &lt/Entries&gt
 &lt/Entry&gt</code></pre>
     Pack resident.pftxs. Add your model to resident00.fpk using gsz_tool or MGSV_FPK_TOOL. Calculate hash for fmdl using method above for textures - this is important. 
-    Edit fv2 template, replace last 8 bytes (FFFFFFFFFFFFFFFF) with fmdl hash. Pack fv2. Launch the game. If the model is in the wrong position, move it using either python script, or manually in 3dsmax with <a href="http://forum.xentax.com/viewtopic.php?p=120622#p120622">vertex script</a> (<a href="http://forum.xentax.com/viewtopic.php?p=121065#p121065">how?</a>).
+    Edit fv2 template, replace last 8 bytes (FFFFFFFFFFFFFFFF) with fmdl hash. Pack fv2. Launch the game. If the model is in the wrong position, move it using either python script, or manually in 3dsmax with <a href="https://forum.xentax.com/viewtopic.php?p=120622#p120622">vertex script</a> (<a href="https://forum.xentax.com/viewtopic.php?p=121065#p121065">how?</a>).
         </p>
 
         <h3>For the lazy</h3>
         <p>
             I've ported almost all MGO hats to TPP.<br>
-            <a href='http://imgur.com/a/5rVAE'>http://imgur.com/a/5rVAE</a> - previews.<br>
+            <a href='https://imgur.com/a/5rVAE'>https://imgur.com/a/5rVAE</a> - previews.<br>
             You can find models and textures here - <a href="https://mega.nz/#F!ZwR3iLIS!D95yuDdUUJt1Wm0TkfX97Q">mega</a>.
             <br>How to use:
             <ul>
@@ -708,7 +708,7 @@ d3 73 85 dc df 5b 6b 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex4.ftex
                     Unpack resident00.fpk (00.dat) with gzs/fpk tool, add fmdls saving the same structure: <code>/Assets/tpp/hats/__soldier_type__/__game_type__/(__hat_type__)/__filename.fmdl__</code>
                     You'll need __hat_type__ only for mgo hats. Pack it back.</li>
                 <li>
-                    MGO textures: find resident00.pftxs (01.dat). Unpack with gzs_tool, add textures saving the same structure: <code>Assets/tpp/hats/textures/mgo/__hat_type__/__hat_name__/tex[0-9].([1-3].)ftex(s)</code>. Make xml entries for every file added (or just grab them from pftxs_entries.txt in models directory which is not available for all models because I forgot to save one file). Order is important: ftex->ftexs.1->ftexs.2 etc. Pack it back. You cannot have too many textures at once in one pftxs - game has a limit. <a href="http://i.imgur.com/xrL8oKw.jpg">What happens when you hit the limit.</a>
+                    MGO textures: find resident00.pftxs (01.dat). Unpack with gzs_tool, add textures saving the same structure: <code>Assets/tpp/hats/textures/mgo/__hat_type__/__hat_name__/tex[0-9].([1-3].)ftex(s)</code>. Make xml entries for every file added (or just grab them from pftxs_entries.txt in models directory which is not available for all models because I forgot to save one file). Order is important: ftex->ftexs.1->ftexs.2 etc. Pack it back. You cannot have too many textures at once in one pftxs - game has a limit. <a href="https://i.imgur.com/xrL8oKw.jpg">What happens when you hit the limit.</a>
                 </li>
                 <li>
                     Select fovas depending on what player type you chose:
@@ -737,12 +737,12 @@ d3 73 85 dc df 5b 6b 15 | Assets\tpp\hats\textures\mgo\allclass\hat0\tex4.ftex
         </p>
 
         <h3>Pics:</h3>
-        <img src="http://i.imgur.com/muK2Y1T.jpg">
-        <img src="http://i.imgur.com/UFQALfv.jpg">
-        <img src="http://i.imgur.com/5kcB2KD.jpg">
-        <img src="http://i.imgur.com/nWUAsKO.jpg">
-        <img src="http://i.imgur.com/c5vRZRO.jpg">
-        <img src="http://i.imgur.com/Sd1kWlN.jpg">
+        <img src="https://i.imgur.com/muK2Y1T.jpg">
+        <img src="https://i.imgur.com/UFQALfv.jpg">
+        <img src="https://i.imgur.com/5kcB2KD.jpg">
+        <img src="https://i.imgur.com/nWUAsKO.jpg">
+        <img src="https://i.imgur.com/c5vRZRO.jpg">
+        <img src="https://i.imgur.com/Sd1kWlN.jpg">
 
         </section>
     </div>
