@@ -13,6 +13,7 @@ function script_loader.read_config()
     local content = f:read("*all")
     f:close()
     local config = json.decode(content)
+    helpers.log('Config updated', true)
     return config
 end
 
@@ -21,6 +22,7 @@ function script_loader.bind_keys()
     helpers.log('Binding keys..', true)
     modules = {}
     for k,v in pairs(t["keys"]) do
+        helpers.log('Loading module' .. tostring(v["module"]) , true)
         --reload modules
         --this check is really important so different functions from the same 
         --module can use upvalues together. Without it there will be some issues
@@ -34,7 +36,7 @@ function script_loader.bind_keys()
     keys[bindable_key] = modules[v["module"]][v["function"]]
     helpers.log('keybinder: '..k..'->'..v["module"]..'.'..v["function"])
     end
-    helpers.log('Keys binded', true)
+    helpers.log('Keys bound', true)
 end
 
 function error_handler(err)
