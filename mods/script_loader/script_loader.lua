@@ -22,7 +22,7 @@ function script_loader.bind_keys()
     helpers.log('Binding keys..', true)
     modules = {}
     for k,v in pairs(t["keys"]) do
-        helpers.log('Loading module' .. tostring(v["module"]) , true)
+        --helpers.log('Loading module' .. tostring(v["module"]) , true)
         --reload modules
         --this check is really important so different functions from the same 
         --module can use upvalues together. Without it there will be some issues
