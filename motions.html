@@ -96,7 +96,7 @@
         </ul>
         Feel free to rebind keys to whatever you want (aside from <code>ZOOM</code> and <code>ACTION</code>), list of keys here - <a href="https://wiki.nexusmods.com/index.php/Input_handling">https://wiki.nexusmods.com/index.php/Input_handling</a>. Reload the config right in the game using <code>ZOOM+ACTION</code> combination, no need to restart the game.
         <p>Debug, repeat and hold options can be changed right in the animation_changer.lua. Make your changes, then hold <code>ZOOM+ACTION</code> to reload the script without exiting the game.</p>
-        <p>If you have message about keys being binded, but animation is not playing, create log.txt in the same folder as mgsvtpp.exe.</p>
+        <p>If you have message about keys being bound, but animation is not playing, create log.txt in the same folder as mgsvtpp.exe.</p>
 
         <h3>Issues</h3>
         <ul>
@@ -107,7 +107,7 @@
                 Animations are not playable during cinematic cutscenes.
             </li>
             <li>
-                MGO animations consist of 3 files - beginning, idle and end motions. Some poses can be repeated (see ani_repeat parameter), at least it works for 'mission clear' motion. If you set <code>ani_hold_forever</code> flag to true, after finishing the animation you will stand still in same pose unable to move. This is handy for posing; standing still can be interrupted by using <code>Player.RequestToStopDirectMotion()</code>, which is binded to 'arrow left' by default. <u>You have to interrupt it every time after playing a motion to be able to play another one if you have ani_hold_forever set to true</u> (off by default).</li>
+                MGO animations consist of 3 files - beginning, idle and end motions. Some poses can be repeated (see ani_repeat parameter), at least it works for 'mission clear' motion. If you set <code>ani_hold_forever</code> flag to true, after finishing the animation you will stand still in same pose unable to move. This is handy for posing; standing still can be interrupted by using <code>Player.RequestToStopDirectMotion()</code>, which is bound to 'arrow left' by default. <u>You have to interrupt it every time after playing a motion to be able to play another one if you have ani_hold_forever set to true</u> (off by default).</li>
             <li>Sometimes motion won't play immidiately, you'll hear clacking sound (or debug messages if debug is on), but nothing will happen. Holding a button for longer time fixes that, I think game takes time to load motion or whatever.</li>
             <li>
                 Increased loading times, nothing you can do about it.
